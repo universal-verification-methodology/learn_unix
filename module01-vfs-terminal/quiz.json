@@ -1,0 +1,53 @@
+{
+  "module": "module01-vfs-terminal",
+  "title": "Filesystem terminal check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "pwd tells you…",
+      "choices": [
+        "Your login password",
+        "The current working directory",
+        "All processes running",
+        "Only the home directory forever"
+      ],
+      "answer": 1,
+      "explain": "pwd prints the current working directory for this shell session."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A relative path is resolved against…",
+      "choices": [
+        "Always the filesystem root",
+        "Always your home directory",
+        "Your current working directory",
+        "The Git remote URL"
+      ],
+      "answer": 2,
+      "explain": "Relative paths join to the current working directory (cwd)."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "The browser vfs-terminal lab writes permanently to your real disk.",
+      "answer": false,
+      "explain": "It is a sandboxed concept lab — no real disk writes."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A good first practice trio in this module is…",
+      "choices": [
+        "git push, make, verilator",
+        "pwd, ls, cd",
+        "chmod, chown, sudo",
+        "tar, gzip, scp"
+      ],
+      "answer": 1,
+      "explain": "Navigation literacy starts with pwd, ls, and cd."
+    }
+  ]
+}

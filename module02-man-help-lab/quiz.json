@@ -1,0 +1,53 @@
+{
+  "module": "module02-man-help-lab",
+  "title": "Help discoverability check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "For a full command manual, you usually run…",
+      "choices": [
+        "whatis command",
+        "man command",
+        "apropos command only",
+        "pwd command"
+      ],
+      "answer": 1,
+      "explain": "man opens the manual page for a command."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A quick reminder of flags is often…",
+      "choices": [
+        "command --help",
+        "cd --manual",
+        "git only",
+        "rm -rf /"
+      ],
+      "answer": 0,
+      "explain": "Many commands print a short usage summary with --help."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "apropos searches for commands by keyword in their descriptions.",
+      "answer": true,
+      "explain": "apropos (and man -k) match keywords against short descriptions."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "whatis is best for…",
+      "choices": [
+        "Deleting files",
+        "A one-line summary of a command",
+        "Compiling Verilog",
+        "Changing directories permanently"
+      ],
+      "answer": 1,
+      "explain": "whatis prints a short one-line description when the database is available."
+    }
+  ]
+}

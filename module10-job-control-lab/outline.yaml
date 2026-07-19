@@ -1,0 +1,12 @@
+# Module 10 outline
+title: "Job control"
+kind: lab
+lab: job-control-lab
+slides:
+  - Course context / why this matters for digital design
+  - Core idea (1 concept)
+  - Track B: show lab starter (if lab module)
+  - Track A: one real-shell demo
+  - Common pitfalls
+  - Your turn + quiz prompt
+duration_minutes: 8

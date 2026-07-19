@@ -1,0 +1,23 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/examples/navigation
+
+$ ls -la
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 sample_repo
+
+$ cd sample_repo
+
+$ ls
+README.txt
+build
+src
+tb
+
+$ cd ..
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/examples/navigation

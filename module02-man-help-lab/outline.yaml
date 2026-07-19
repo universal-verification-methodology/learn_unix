@@ -1,0 +1,69 @@
+title: man / --help discoverability
+footer: learn_unix — man help lab
+slides:
+- type: title
+  title: man / --help discoverability
+  subtitle: You will not memorize every flag
+  notes: 'You will not memorize every flag. Design work throws new tools at you—simulators,
+    Make, Git—and the shell already has a way to look them up. This module is about
+    discovering help: the manual, short help text, and a couple of search helpers.'
+- type: bullets
+  title: Four ways to ask for help
+  bullets:
+  - Use the manual when you want the full story
+  - Use a help flag when you need a quick reminder of options
+  - Use whatis for a one-line summary
+  - Use apropos when you remember the idea but not the command name
+  - Pick the lightest tool that answers your question, then go back to work
+  notes: Use the manual when you want the full story. Use a help flag when you need
+    a quick reminder of options. Use whatis for a one-line summary. Use apropos when
+    you remember the idea but not the command name. Pick the lightest tool that answers
+    your question, then go back to work.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: man / --help lab starter
+  notes: In the browser lab, load the starter example. You will see a sandboxed prompt
+    and a challenge card. Try opening a short manual page, page through it, quit,
+    then compare with a help flag. The lab is not a full system manual database—it
+    teaches the habit. Explore a few challenges, then switch to a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — man and help
+  notes: In the real Unix track, open this module’s help example folder. Ask for a
+    one-line summary, skim short help for list, and if your system has manuals installed,
+    open a man page with a plain pager so it prints instead of trapping you in an
+    interactive viewer. These same lookups will matter when you meet Icarus, Verilator,
+    and Make later—help first, then flags.
+- type: code
+  title: Real shell practice — try these
+  code: 'whatis ls
+
+    ls --help | head -n 12
+
+    MANPAGER=cat man ls | head -n 20
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Not every command has a man page on every machine
+  - Some tools use a help flag; others use a different switch
+  - Interactive man viewers need a quit key, or they feel “stuck.” And remember
+  notes: 'Not every command has a man page on every machine—WSL and minimal images
+    sometimes ship thin documentation. Some tools use a help flag; others use a different
+    switch. Interactive man viewers need a quit key, or they feel “stuck.” And remember:
+    the browser lab builds intuition; your real projects still need a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, run through the help example
+  - When you are ready, take the short quiz, then continue to absolute versus relative
+    paths
+  notes: 'Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, run through the
+    help example: whatis, help text, and a man skim when available. When you are ready,
+    take the short quiz, then continue to absolute versus relative paths.'

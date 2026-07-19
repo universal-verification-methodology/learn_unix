@@ -1,0 +1,48 @@
+# Module 27: .env literacy
+
+**Kind:** `lab` · Primary lab: `env-file-lab` · **Planned (Coming soon on tools index — use Track A until it ships)**
+
+[← Log / failure triage](../module26-log-triage/README.md) · [Course README](../README.md) · [Unix path complete → Git →](../module28-wrap/README.md)
+
+## Outcomes
+
+After this module you can explain and practice the ideas taught by **`env-file-lab`**, in the browser and/or on a real shell.
+
+## Two tracks (pick one or both)
+
+### Track A — Real Unix (hands-on)
+
+Work in your local terminal using this module’s `examples/` (copied from the proven `learn_unix_git` trees).
+
+1. Open [EXAMPLES.md](EXAMPLES.md) and run the “Try these” commands.
+2. Complete [CHECKLIST.md](CHECKLIST.md) on a real filesystem (`~/unix_practice` recommended).
+3. Optional self-check: `./scripts/module.sh 27 --check` (from course root).
+
+### Track B — Browser lab (online)
+
+1. Local: [http://127.0.0.1:8080/tools/env-file-lab/index.html](http://127.0.0.1:8080/tools/env-file-lab/index.html)
+2. Live: [https://universal-verification-methodology.github.io/learning/tools/env-file-lab/](https://universal-verification-methodology.github.io/learning/tools/env-file-lab/)
+3. Load the **starter example**, then work challenges.
+4. Check off the Track B items in [CHECKLIST.md](CHECKLIST.md).
+
+> Concept labs are literacy tools — they do not replace a real shell for scripts you will keep in a design project.
+
+## Media (planned)
+
+| Artifact | Path |
+|----------|------|
+| Outline | [outline.yaml](outline.yaml) |
+| Transcript stub | [transcript.md](transcript.md) |
+| Slides / video | `media/module27/` (generate later) |
+
+## Files
+
+```
+module27-env-file-lab/
+├── README.md       # this file
+├── CHECKLIST.md    # Track A + Track B checkboxes
+├── EXAMPLES.md     # real-Unix example index
+├── outline.yaml    # slide / clip outline
+├── transcript.md   # speakable stub
+└── examples/       # hands-on trees (Track A)
+```

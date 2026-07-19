@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-1.png'
+duration 19.56
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-2.png'
+duration 20.424
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-3.png'
+duration 22.584
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-4.png'
+duration 23.008
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-6.png'
+duration 21.504
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-7.png'
+duration 23.664
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module01-vfs-terminal/frames/slide-7.png'
