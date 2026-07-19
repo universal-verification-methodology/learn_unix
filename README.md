@@ -7,11 +7,10 @@
 [![Labs](https://img.shields.io/badge/labs-GitHub%20Pages-222?logo=githubpages)](https://universal-verification-methodology.github.io/learning/tools/)
 [![Domain](https://img.shields.io/badge/domain-Unix%20%7C%20shell%20%7C%20digital%20design-purple)](https://github.com/universal-verification-methodology/learn_unix)
 
-**learn_unix** is the open learning path for *Unix / shell fluency for digital design students*. It is consumed as a **Git submodule** at `courses/learn_unix/` inside the [learning](https://github.com/universal-verification-methodology/learning) monorepo. Modules follow the lab-driven syllabus; browser labs live under the parent’s `platform/tools/`.
+**learn_unix** is the open learning path for *Unix / shell fluency for digital design students*. 
 
 Readers and students usually **open a module README** (or the live tools) or clone this public repo. Authors edit content here (or via the parent monorepo checkout), rebuild slides/audio with **module-slides** in the parent, and push; the parent repo only stores a pinned submodule commit.
 
-Unix content was split from [`learn_unix_git`](https://github.com/universal-verification-methodology/learn_unix_git). Git stays there until `learn_git` is scaffolded.
 
 ## Table of contents
 
