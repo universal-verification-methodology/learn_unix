@@ -1,7 +1,7 @@
 # learn_unix
 
 [![GitHub](https://img.shields.io/badge/GitHub-learn__unix-181717?logo=github)](https://github.com/universal-verification-methodology/learn_unix)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green?logo=creativecommons&logoColor=white)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green?logo=creativecommons&logoColor=white)](LICENSE)
 [![Role](https://img.shields.io/badge/role-Git%20submodule-orange)](https://github.com/universal-verification-methodology/learning)
 [![Parent](https://img.shields.io/badge/parent-learning%20monorepo-0A9EDC)](https://github.com/universal-verification-methodology/learning)
 [![Labs](https://img.shields.io/badge/labs-GitHub%20Pages-222?logo=githubpages)](https://universal-verification-methodology.github.io/learning/tools/)
@@ -29,6 +29,7 @@ Unix content was split from [`learn_unix_git`](https://github.com/universal-veri
 ```text
 learn_unix/
 ├── README.md
+├── LICENSE              # CC BY 4.0
 ├── docs/
 │   ├── MODULES.md       # full module index (00–28)
 │   └── TWO_TRACKS.md    # Track A (real Unix) vs Track B (browser)
@@ -168,6 +169,6 @@ By workflow (Track B): [vfs-terminal](https://universal-verification-methodology
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE).
 
 Example trees for early modules were adapted from [`learn_unix_git`](https://github.com/universal-verification-methodology/learn_unix_git). Platform tools and the parent monorepo may carry additional notices.
