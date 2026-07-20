@@ -28,10 +28,10 @@ Lab-driven syllabus (pass 3). Full product syllabus: [../../syllabus.md](../../s
 | 21 | `lab` | [Backup & clean-build](../module21-backup-clean/README.md) | `backup-clean` | S |
 | 22 | `lab` | [Relative symlink pitfalls](../module22-link-relative/README.md) | `link-relative` | S |
 | 23 | `lab` | [Pre-push / Make / env checklist](../module23-workflow/README.md) | `workflow` | S |
-| 24 | `lab` | [Makefile basics](../module24-make-basics/README.md) | `make-basics` | P |
-| 25 | `lab` | [Dry-run mindset](../module25-dry-run-lab/README.md) | `dry-run-lab` | P |
-| 26 | `lab` | [Log / failure triage](../module26-log-triage/README.md) | `log-triage` | P |
-| 27 | `lab` | [.env literacy](../module27-env-file-lab/README.md) | `env-file-lab` | P |
+| 24 | `lab` | [Makefile basics](../module24-make-basics/README.md) | `make-basics` | S |
+| 25 | `lab` | [Dry-run mindset](../module25-dry-run-lab/README.md) | `dry-run-lab` | S |
+| 26 | `lab` | [Log / failure triage](../module26-log-triage/README.md) | `log-triage` | S |
+| 27 | `lab` | [.env literacy](../module27-env-file-lab/README.md) | `env-file-lab` | S |
 | 28 | `wrap` | [Unix path complete → Git](../module28-wrap/README.md) | — | — |
 
 ## Dual tracks
