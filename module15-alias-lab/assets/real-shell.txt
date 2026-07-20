@@ -1,0 +1,27 @@
+# real shell session (Track A)
+
+$ alias ll='ls -alF'
+
+$ ll
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ./
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ../
+-rwxrwxrwx 1 yongfu yongfu 1290 Jul 18 16:34 README.md*
+-rwxrwxrwx 1 yongfu yongfu  368 Jul 18 16:34 commands_to_try.txt*
+
+$ alias | grep ll
+alias ll='ls -alF'
+
+$ greet() { echo Hello "$1"; }
+
+$ greet Alice
+Hello Alice
+
+$ type greet
+greet is a function
+greet () 
+{ 
+    echo Hello "$1"
+}
+
+$ unalias ll

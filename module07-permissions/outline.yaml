@@ -1,12 +1,108 @@
-# Module 07 outline
-title: "Permissions, umask, PATH"
-kind: lab
-lab: permissions
+title: Permissions, umask, PATH
+footer: learn_unix — permissions
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Permissions, umask, PATH
+  subtitle: Who can read a file, who can run a script
+  notes: Who can read a file, who can run a script, and which command the shell finds
+    first—those three ideas show up every day in design work. Permissions gate access.
+    umask sets defaults for new files. PATH decides where the shell looks for tools.
+    This module ties them together so chmod and “command not found” feel less mysterious.
+- type: bullets
+  title: Mode bits, umask, and PATH
+  bullets:
+  - In a long listing, the nine permission letters are user, group
+  - Chmod changes those bits; a script needs execute before you can run it with dot-slash
+  - Umask masks bits off new files so you do not accidentally create world-writable
+    junk
+  - PATH is a colon-separated search list
+  notes: In a long listing, the nine permission letters are user, group, and others—each
+    with read, write, and execute. chmod changes those bits; a script needs execute
+    before you can run it with dot-slash. umask masks bits off new files so you do
+    not accidentally create world-writable junk. PATH is a colon-separated search
+    list—your current directory is usually not on it, which is why you type dot-slash
+    for a local script.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Permissions lab
+  notes: In the browser lab, load the starter example. Flip a mode and watch the symbolic
+    string. Try an umask and see what a new file would get. Glance at the PATH panel
+    and which-command lookup. Orient yourself across those three panels, try a few
+    challenges, then practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — permissions and umask
+  notes: In the real Unix track, open this module’s permissions example. List the
+    files in long format. Add execute for your user on the hello script, list again,
+    then run it with dot-slash. Tighten the config file to owner-only with a numeric
+    mode. Print umask in numeric and symbolic form so you see the default mask for
+    new files. You will reuse chmod and PATH habits with real toolchains later.
+- type: code
+  title: Real shell practice — try these
+  code: '# ls -l — long listing; read the nine permission letters
+
+    ls -l
+
+
+    # chmod u+x hello.sh — add execute for your user (symbolic mode)
+
+    chmod u+x hello.sh
+
+
+    # ls -l hello.sh — confirm the user execute bit appears
+
+    ls -l hello.sh
+
+
+    # ./hello.sh — run the script in this directory (dot is usually not on PATH)
+
+    ./hello.sh
+
+
+    # chmod 600 config.txt — owner read/write only (numeric mode)
+
+    chmod 600 config.txt
+
+
+    # ls -l — see both the script and the tightened config
+
+    ls -l
+
+
+    # umask — show the numeric default mask for new files
+
+    umask
+
+
+    # umask -S — same mask in symbolic form
+
+    umask -S
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Avoid chmod seven-seven-seven unless you truly understand the risk
+  - Prefer user-plus-execute for scripts you own
+  - 'Remember: without dot-slash'
+  - And remember
+  notes: 'Avoid chmod seven-seven-seven unless you truly understand the risk. Prefer
+    user-plus-execute for scripts you own. Remember: without dot-slash, the shell
+    searches PATH and may say “command not found” even when the file is right here.
+    And remember: the browser lab shows the idea; real projects still need correct
+    modes on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, practice chmod, umask
+  - When you are ready, take the short quiz, then continue to dotfiles and config
+    homes
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, practice chmod,
+    umask, and running a local script with dot-slash—then explore the other example
+    folders when you want more depth. When you are ready, take the short quiz, then
+    continue to dotfiles and config homes.

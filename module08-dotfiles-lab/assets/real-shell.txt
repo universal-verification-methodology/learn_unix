@@ -1,0 +1,46 @@
+# real shell session (Track A)
+
+$ ls
+README.md
+visible.txt
+
+$ ls -a
+.
+..
+.gitignore
+.hidden_dir
+.hidden_file
+.sample_rc
+README.md
+visible.txt
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu   67 Jul 18 16:34 .gitignore
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .hidden_dir
+-rwxrwxrwx 1 yongfu yongfu   57 Jul 18 16:34 .hidden_file
+-rwxrwxrwx 1 yongfu yongfu   71 Jul 18 16:34 .sample_rc
+-rwxrwxrwx 1 yongfu yongfu 2314 Jul 18 16:34 README.md
+-rwxrwxrwx 1 yongfu yongfu   58 Jul 18 16:34 visible.txt
+
+$ cat .hidden_file
+This file name starts with a dot. Use "ls -a" to see it.
+
+$ cat .sample_rc
+# Example dotfile for Module 2. Use: cat .sample_rc or less .sample_rc
+
+$ ls -a ~ | head -12
+.
+..
+.EasyOCR
+.bash_aliases
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.config
+.cursor
+.cursor-server
+.git-credentials

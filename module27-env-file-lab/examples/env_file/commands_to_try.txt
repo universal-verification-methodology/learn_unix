@@ -1,5 +1,6 @@
-# Environment file — try in module8/examples/env_file
-source sample.env
-echo $MY_VAR
+# Environment file — try in module27-env-file-lab/examples/env_file
+cat sample.env
 ./use_env.sh
-export $(grep -v '^#' sample.env | xargs)
+source sample.env
+echo "$MY_VAR"
+echo "$ANOTHER_VAR"

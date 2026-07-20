@@ -10,7 +10,7 @@
 
 - [ ] Opened the lab (local or live)
 - [ ] Loaded the starter example
-- [ ] Completed a few challenges (or noted the lab is still Coming soon)
+- [ ] Completed a few challenges (set -euo, quoting, dry-run)
 
 ## Done when
 

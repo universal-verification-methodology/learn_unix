@@ -1,0 +1,53 @@
+{
+  "module": "module21-backup-clean",
+  "title": "Backup & clean-build check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A good order of operations is…",
+      "choices": [
+        "Clean first, then maybe backup",
+        "Backup (or dry-run list), then clean generated dirs",
+        "Delete the whole home directory",
+        "Skip listing and use rm -rf $"
+      ],
+      "answer": 1,
+      "explain": "Backup first; list clean targets; only then delete."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Timestamped archive names help because…",
+      "choices": [
+        "They compress better",
+        "You can keep multiple versions without overwriting",
+        "tar requires dates",
+        "They disable set -e"
+      ],
+      "answer": 1,
+      "explain": "date stamps avoid clobbering earlier backups."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Excluding build/ and logs/ from a source backup keeps archives smaller and more shareable.",
+      "answer": true,
+      "explain": "Generated artifacts are rebuildable; sources are what you need to restore."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Before find … -delete on build/, you should…",
+      "choices": [
+        "List the files first with find (no -delete)",
+        "Always sudo",
+        "Delete src/ first",
+        "Disable tar"
+      ],
+      "answer": 0,
+      "explain": "List to confirm paths; delete only when sure."
+    }
+  ]
+}

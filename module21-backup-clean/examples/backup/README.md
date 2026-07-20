@@ -24,11 +24,13 @@ ls -la backup_*.tar.gz
 **2. Using the demo script**
 
 ```bash
-cd module5/examples/backup
+cd module21-backup-clean/examples/backup
 chmod u+x backup_demo.sh
 ./backup_demo.sh
 ls -la *.tar.gz
 ```
+
+The script packs `../clean_build/sample_project`, excluding `build/` and `logs/`.
 
 **3. Extract and verify**
 

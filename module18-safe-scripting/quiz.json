@@ -1,0 +1,53 @@
+{
+  "module": "module18-safe-scripting",
+  "title": "Safe scripting check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "set -e at the top of a script typically…",
+      "choices": [
+        "Disables all errors",
+        "Exits the script when a command fails (non-zero)",
+        "Deletes tmp automatically",
+        "Turns off quoting rules"
+      ],
+      "answer": 1,
+      "explain": "errexit (-e) stops on the first failing command."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Quoting \"$file\" helps because…",
+      "choices": [
+        "It makes rm ignore the file",
+        "Spaces and special characters in the path stay one argument",
+        "It disables set -u",
+        "It is required only for Python"
+      ],
+      "answer": 1,
+      "explain": "Unquoted expansions can word-split and hit the wrong paths."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "A dry-run default (print what would be deleted) is safer than deleting on first run.",
+      "answer": true,
+      "explain": "Inspect first; require an explicit --confirm (or similar) for destruction."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "./clean_tmp.sh with no flags in this module’s example…",
+      "choices": [
+        "Always deletes tmp/*.tmp",
+        "Prints Would delete lines and leaves the files",
+        "Formats the disk",
+        "Ignores set -e"
+      ],
+      "answer": 1,
+      "explain": "Dry run is the default; --confirm performs the deletes."
+    }
+  ]
+}

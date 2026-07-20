@@ -1,0 +1,29 @@
+# real shell session (Track A)
+
+$ chmod u+x success.sh failure.sh check_file.sh
+
+$ ./success.sh
+Success script finished.
+$ echo $?
+0
+
+$ ./failure.sh
+Failure script: something went wrong.
+$ echo $?
+1
+
+$ ./check_file.sh README.md
+File exists: README.md
+$ echo $?
+0
+
+$ ./check_file.sh missing.txt
+File not found: missing.txt
+$ echo $?
+1
+
+$ true && echo ok
+ok
+
+$ false || echo fallback
+fallback

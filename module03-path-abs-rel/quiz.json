@@ -1,0 +1,48 @@
+{
+  "module": "module03-path-abs-rel",
+  "title": "Paths check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A path that starts with / is…",
+      "choices": ["relative", "absolute", "always home", "a glob"],
+      "answer": 1,
+      "explain": "Leading slash means from the filesystem root — absolute."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A relative path is resolved against…",
+      "choices": [
+        "Always the filesystem root",
+        "Your current working directory",
+        "Only Git remotes",
+        "The previous login"
+      ],
+      "answer": 1,
+      "explain": "Relative paths join to the current working directory (cwd)."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "cd .. moves up one directory using a relative path.",
+      "answer": true,
+      "explain": "Two dots means the parent of the current directory."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "The tilde (~) in a path usually means…",
+      "choices": [
+        "The filesystem root",
+        "Your home directory",
+        "The parent of cwd only",
+        "A deleted file"
+      ],
+      "answer": 1,
+      "explain": "Tilde expands to the user’s home directory."
+    }
+  ]
+}

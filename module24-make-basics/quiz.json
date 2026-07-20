@@ -1,0 +1,53 @@
+{
+  "module": "module24-make-basics",
+  "title": "Makefile basics check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does Make primarily read to decide what to run?",
+      "choices": [
+        "A random shell history file",
+        "A Makefile with targets, deps, and recipes",
+        "Only the PATH variable",
+        "Git commit messages"
+      ],
+      "answer": 1,
+      "explain": "Make executes rules from a Makefile based on targets and dependencies."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why mark clean as .PHONY?",
+      "choices": [
+        "So Make ignores the target forever",
+        "So Make always runs the recipe even if a file named clean exists",
+        "So tabs become spaces",
+        "So make help is disabled"
+      ],
+      "answer": 1,
+      "explain": ".PHONY marks names that are actions, not real output files."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Running make with no arguments usually builds the default (often first or all) target.",
+      "answer": true,
+      "explain": "Bare make runs the default goal—commonly all or the first target listed."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Recipe lines under a Makefile rule must be indented with…",
+      "choices": [
+        "Two spaces only",
+        "A real tab character",
+        "Markdown backticks",
+        "No indentation at all"
+      ],
+      "answer": 1,
+      "explain": "Make requires a tab before each recipe command (spaces alone fail)."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/examples/logs
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu 1105 Jul 20 09:17 README.md
+-rwxrwxrwx 1 yongfu yongfu  203 Jul 20 09:17 commands_to_try.txt
+-rwxrwxrwx 1 yongfu yongfu  401 Jul 18 16:34 sample.log
+
+$ wc -l sample.log
+11 sample.log
+
+$ tail -5 sample.log
+[ERROR] Assertion failed at line 42: expected 0x0, got 0x1
+[WARN] Timeout threshold approaching
+[INFO] Test run finished
+[ERROR] 1 test failed
+[INFO] End of log
+
+$ grep -i error sample.log
+[ERROR] Assertion failed at line 42: expected 0x0, got 0x1
+[ERROR] 1 test failed
+
+$ grep -i warn sample.log
+[WARN] Unused signal 'debug_q' in block top
+[WARN] Timeout threshold approaching
+
+$ grep -n ERROR sample.log
+7:[ERROR] Assertion failed at line 42: expected 0x0, got 0x1
+10:[ERROR] 1 test failed

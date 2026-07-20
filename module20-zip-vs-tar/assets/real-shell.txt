@@ -1,0 +1,36 @@
+# real shell session (Track A)
+
+$ ls demo_dir/
+file1.txt
+file2.txt
+subdir
+
+$ tar czf /tmp/m20_demo.tar.gz demo_dir/
+
+$ tar tzf /tmp/m20_demo.tar.gz
+demo_dir/
+demo_dir/file1.txt
+demo_dir/file2.txt
+demo_dir/subdir/
+demo_dir/subdir/file3.txt
+
+$ cd ../zip_archives
+
+$ zip -r /tmp/m20_demo.zip demo_dir/
+  adding: demo_dir/ (stored 0%)
+  adding: demo_dir/file1.txt (stored 0%)
+  adding: demo_dir/file2.txt (stored 0%)
+  adding: demo_dir/subdir/ (stored 0%)
+  adding: demo_dir/subdir/file3.txt (stored 0%)
+
+$ unzip -l /tmp/m20_demo.zip
+Archive:  /tmp/m20_demo.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-07-18 16:34   demo_dir/
+       38  2026-07-18 16:34   demo_dir/file1.txt
+       38  2026-07-18 16:34   demo_dir/file2.txt
+        0  2026-07-18 16:34   demo_dir/subdir/
+       48  2026-07-18 16:34   demo_dir/subdir/file3.txt
+---------                     -------
+      124                     5 files

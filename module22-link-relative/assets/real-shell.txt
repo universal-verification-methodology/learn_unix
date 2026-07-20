@@ -1,0 +1,31 @@
+# real shell session (Track A)
+
+$ ls -la external/
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ..
+-rwxrwxrwx 1 yongfu yongfu    0 Jul 18 16:34 .gitkeep
+lrwxrwxrwx 1 yongfu yongfu   18 Jul 18 16:34 lib.v -> ../../shared/lib.v
+
+$ readlink external/lib.v
+../../shared/lib.v
+
+$ cat external/lib.v
+// Shared library for link_relative example
+module lib;
+endmodule
+
+$ ln -s "$(realpath ../shared/lib.v)" external/abs_lib.v
+
+$ ls -la external/
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20  2026 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ..
+-rwxrwxrwx 1 yongfu yongfu    0 Jul 18 16:34 .gitkeep
+lrwxrwxrwx 1 yongfu yongfu  106 Jul 20  2026 abs_lib.v -> /mnt/d/proj/designs/learning/courses/learn_unix/module22-link-relative/examples/link_relative/shared/lib.v
+lrwxrwxrwx 1 yongfu yongfu   18 Jul 18 16:34 lib.v -> ../../shared/lib.v
+
+$ readlink external/abs_lib.v
+/mnt/d/proj/designs/learning/courses/learn_unix/module22-link-relative/examples/link_relative/shared/lib.v
+
+$ rm external/abs_lib.v

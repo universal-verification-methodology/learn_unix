@@ -21,11 +21,11 @@ makefile_basics/
 ## Try these (from repo root)
 
 ```bash
-cd module8/examples/makefile_basics/sample_project
+cd module24-make-basics/examples/makefile_basics/sample_project
+make help
 make
 make run
 make clean
-make help
 ```
 
 ## 1. What is Make?

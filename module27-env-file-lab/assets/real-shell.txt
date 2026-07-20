@@ -1,0 +1,33 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module27-env-file-lab/examples/env_file
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 09:22 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu 1196 Jul 20 09:20 README.md
+-rwxrwxrwx 1 yongfu yongfu  151 Jul 20 09:20 commands_to_try.txt
+-rwxrwxrwx 1 yongfu yongfu   96 Jul 18 16:34 sample.env
+-rwxrwxrwx 1 yongfu yongfu  369 Jul 18 16:34 use_env.sh
+
+$ cat sample.env
+# Sample env file for module8 env_file example
+MY_VAR=hello
+ANOTHER_VAR=world
+# COMMENT=ignored
+
+$ chmod u+x use_env.sh
+
+$ ./use_env.sh
+MY_VAR=hello
+ANOTHER_VAR=world
+
+$ source sample.env
+
+$ echo MY_VAR=$MY_VAR
+MY_VAR=hello
+
+$ echo ANOTHER_VAR=$ANOTHER_VAR
+ANOTHER_VAR=world

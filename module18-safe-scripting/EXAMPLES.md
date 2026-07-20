@@ -4,11 +4,24 @@ Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
 ## `safe_scripting/`
 
-See [`examples/safe_scripting/README.md`](examples/safe_scripting/README.md) if present.
+See [`examples/safe_scripting/README.md`](examples/safe_scripting/README.md).
 
-**Try:**
+**Try these:**
 
 ```bash
 cd module18-safe-scripting/examples/safe_scripting
-ls -la
+chmod u+x clean_tmp.sh
+
+# Dry run (default) — prints Would delete, keeps files
+ls tmp/
+./clean_tmp.sh
+ls tmp/
+
+# Actually delete only when ready
+./clean_tmp.sh --confirm
+ls tmp/
+
+# Optional: recreate sample files for another practice pass
+# printf 'x\n' > tmp/cache1.tmp
+# printf 'y\n' > tmp/cache2.tmp
 ```

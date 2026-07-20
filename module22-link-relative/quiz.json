@@ -1,0 +1,53 @@
+{
+  "module": "module22-link-relative",
+  "title": "Relative symlink check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A relative symlink’s target is resolved from…",
+      "choices": [
+        "Always the user’s home directory",
+        "The directory containing the symlink",
+        "Only /tmp",
+        "Git’s remote URL"
+      ],
+      "answer": 1,
+      "explain": "Relative targets are relative to the link’s location, not your cwd when you typed ln."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Moving an entire project tree to a new prefix usually keeps…",
+      "choices": [
+        "Only absolute links",
+        "Relative links whose relative path between link and target is unchanged",
+        "No links at all",
+        "Broken pipes"
+      ],
+      "answer": 1,
+      "explain": "Relative links survive whole-tree moves; absolute links often still point at the old prefix."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Moving only a relative symlink to a different directory often breaks it.",
+      "answer": true,
+      "explain": "The stored relative path no longer reaches the target from the new location."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "readlink path shows…",
+      "choices": [
+        "Only file permissions",
+        "The symlink’s stored target string",
+        "Git blame",
+        "Disk free space"
+      ],
+      "answer": 1,
+      "explain": "readlink prints the link text (relative or absolute)."
+    }
+  ]
+}

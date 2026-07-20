@@ -5,9 +5,9 @@ duration 19.368
 file '/mnt/d/proj/designs/learning/courses/learn_unix/module00-intro/frames/slide-3.png'
 duration 29.424
 file '/mnt/d/proj/designs/learning/courses/learn_unix/module00-intro/frames/slide-4.png'
-duration 18.864
+duration 25.224
 file '/mnt/d/proj/designs/learning/courses/learn_unix/module00-intro/frames/slide-5.png'
-duration 18.144
+duration 23.832
 file '/mnt/d/proj/designs/learning/courses/learn_unix/module00-intro/frames/slide-6.png'
 duration 13.32
 file '/mnt/d/proj/designs/learning/courses/learn_unix/module00-intro/frames/slide-6.png'

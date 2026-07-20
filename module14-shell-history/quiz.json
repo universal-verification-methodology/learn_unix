@@ -1,0 +1,53 @@
+{
+  "module": "module14-shell-history",
+  "title": "Shell history check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Ctrl+R in a typical bash session starts…",
+      "choices": [
+        "Redo of the last undo",
+        "Reverse incremental search of history",
+        "Reload of .bashrc only",
+        "Recursive delete of the current directory"
+      ],
+      "answer": 1,
+      "explain": "Ctrl+R is reverse-search: type a substring to find an older command."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "The history builtin…",
+      "choices": [
+        "Deletes all files older than a day",
+        "Lists numbered past commands from the shell history",
+        "Shows only git commits",
+        "Disables arrow-key recall"
+      ],
+      "answer": 1,
+      "explain": "history prints numbered entries you can recall or re-run carefully."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "!! re-runs the previous command.",
+      "answer": true,
+      "explain": "Bang-bang expands to the last command—use carefully on destructive lines."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Arrow ↑ in the shell typically…",
+      "choices": [
+        "Scrolls the man page only",
+        "Recalls the previous command for editing or re-run",
+        "Sends SIGINT",
+        "Clears the screen"
+      ],
+      "answer": 1,
+      "explain": "Up/down step through history so you can edit and re-run."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/examples/realpath
+
+$ realpath .
+/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/examples/realpath
+
+$ realpath a_file.txt
+/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/examples/realpath/a_file.txt
+
+$ ls -l link_to_file
+lrwxrwxrwx 1 yongfu yongfu 10 Jul 20 03:00 link_to_file -> a_file.txt
+
+$ readlink link_to_file
+a_file.txt
+
+$ realpath link_to_file
+/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/examples/realpath/a_file.txt
+
+$ readlink -f link_to_file
+/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/examples/realpath/a_file.txt

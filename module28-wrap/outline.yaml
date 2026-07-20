@@ -1,12 +1,66 @@
-# Module 28 outline
-title: "Unix path complete → Git"
-kind: wrap
-lab: null
+title: Unix path complete
+footer: learn_unix — wrap
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Unix path complete
+  subtitle: You have walked the Unix path for design work
+  notes: 'You have walked the Unix path for design work—from opening a tree and reading
+    man pages, through pipes and scripts, to Make, dry-run, log triage, and env files.
+    This short wrap names what you can do now and points you to the next course: learn
+    Git.'
+- type: bullets
+  title: What you can do now
+  bullets:
+  - You can navigate and inspect a project from a shell
+  - You can use pipes, jobs, and basic scripts with a dry-run-first habit
+  - Triage a failed Make or sim log before rewriting RTL
+  - That foundation is what every later chip course assumes
+  notes: You can navigate and inspect a project from a shell. You can use pipes, jobs,
+    and basic scripts with a dry-run-first habit. You can keep a small design-style
+    layout tidy—source and testbench folders, archives, clean builds—and triage a
+    failed Make or sim log before rewriting RTL. That foundation is what every later
+    chip course assumes.
+- type: bullets
+  title: Close the track gaps
+  bullets:
+  - The scripting modules so paths and scripts feel natural
+  - If you mainly used a real terminal
+  - Either track works for self-study; both together stick best before Git
+  notes: If you mainly used browser labs, spend a short session on the real shell
+    for early navigation, pipes, and the scripting modules so paths and scripts feel
+    natural. If you mainly used a real terminal, skim any skipped browser labs for
+    the visual challenges. Either track works for self-study; both together stick
+    best before Git.
+- type: two_column
+  title: The tools you practiced
+  left:
+  - Here is the tools index again, the same shelf of concept labs you opened along
+    the way
+  - You do not need to re-clear every challenge
+  - Use it as a map
+  right: assets/tools-index.png
+  notes: 'Here is the tools index again—the same shelf of concept labs you opened
+    along the way. You do not need to re-clear every challenge. Use it as a map: if
+    a skill still feels shaky, jump back to that lab, then return here when you are
+    ready for version control.'
+- type: bullets
+  title: 'Next: learn Git'
+  bullets:
+  - Git sits on the same real shell muscle you just built, status, diffs, commits
+  - Start learn Git from the syllabus when your checklist for this wrap feels honest
+  - Keep a practice tree under your home directory
+  notes: Git sits on the same real shell muscle you just built—status, diffs, commits,
+    and remotes all assume you can move in a tree and read text output. Start learn
+    Git from the syllabus when your checklist for this wrap feels honest. Keep a practice
+    tree under your home directory; you will reuse it when cloning and branching.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Review the wrap checklist
+  - Confirm you can explain absolute versus relative paths and why globs expand before
+    the
+  - Keep a practice tree you can reuse
+  - When you are ready, take the short quiz, then continue to learn Git
+  notes: Review the wrap checklist. Confirm you can explain absolute versus relative
+    paths and why globs expand before the command runs. Keep a practice tree you can
+    reuse. When you are ready, take the short quiz, then continue to learn Git.

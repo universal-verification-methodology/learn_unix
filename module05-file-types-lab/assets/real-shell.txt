@@ -1,0 +1,27 @@
+# real shell session (Track A)
+
+$ ls -l
+total 4
+-rwxrwxrwx 1 yongfu yongfu 2152 Jul 18 16:34 README.md
+lrwxrwxrwx 1 yongfu yongfu   12 Jul 18 16:34 broken_link -> no_such_file
+lrwxrwxrwx 1 yongfu yongfu   10 Jul 18 16:34 my_symlink -> sample.txt
+-rwxrwxrwx 1 yongfu yongfu  132 Jul 18 16:34 sample.txt
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 subdir
+
+$ ls -l my_symlink
+lrwxrwxrwx 1 yongfu yongfu 10 Jul 18 16:34 my_symlink -> sample.txt
+
+$ readlink my_symlink
+sample.txt
+
+$ file sample.txt
+sample.txt: ASCII text
+
+$ file my_symlink
+my_symlink: symbolic link to sample.txt
+
+$ readlink broken_link
+no_such_file
+
+$ ls -l broken_link
+lrwxrwxrwx 1 yongfu yongfu 12 Jul 18 16:34 broken_link -> no_such_file

@@ -1,0 +1,51 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module24-make-basics/examples/makefile_basics/sample_project
+
+$ ls -la
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ..
+-rwxrwxrwx 1 yongfu yongfu  592 Jul 18 16:34 Makefile
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 build
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 logs
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 src
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 tb
+
+$ make help
+Targets: all (default), build, run, clean, help
+
+$ make
+[Make] Creating build/ and logs/...
+[Make] Done.
+
+$ make run
+[Make] Creating build/ and logs/...
+[Make] Done.
+[Make] Running demo...
+[INFO] Project: /mnt/d/proj/designs/learning/courses/learn_unix/module24-make-basics/examples/makefile_basics/sample_project
+[Make] Done. See logs/run.log
+
+$ ls -la build logs
+build:
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ..
+-rwxrwxrwx 1 yongfu yongfu    0 Jul 20  2026 .gitkeep
+
+logs:
+total 0
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20  2026 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 ..
+-rwxrwxrwx 1 yongfu yongfu    0 Jul 18 16:34 .gitkeep
+-rwxrwxrwx 1 yongfu yongfu  125 Jul 20  2026 run.log
+
+$ make clean
+[Make] Cleaning build/ and logs/...
+[Make] Done.
+
+$ ls build logs
+build:
+
+logs:

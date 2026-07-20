@@ -1,12 +1,96 @@
-# Module 08 outline
-title: "Dotfiles & config homes"
-kind: lab
-lab: dotfiles-lab
+title: Dotfiles & config homes
+footer: learn_unix — dotfiles lab
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Dotfiles & config homes
+  subtitle: Names that start with a dot are usually hidden from a plain list
+  notes: Names that start with a dot are usually hidden from a plain list—and that
+    is where a lot of your shell and tool configuration lives. Bashrc, gitignore,
+    and the config directory under home shape how your environment behaves. This module
+    teaches you to reveal those names safely and read them before you change anything.
+- type: bullets
+  title: Hidden names and home config
+  bullets:
+  - A plain list shows only visible names
+  - Add all-files mode and the dots appear
+  - Home is full of them
+  - Projects add their own, especially the git directory and ignore rules
+  - Listing with all-files is the first habit; editing comes later
+  notes: 'A plain list shows only visible names. Add all-files mode and the dots appear:
+    hidden files, hidden directories, and project files like gitignore. Home is full
+    of them—bashrc for interactive Bash, profile for login shells, gitconfig for your
+    identity. Projects add their own, especially the git directory and ignore rules.
+    Listing with all-files is the first habit; editing comes later.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Dotfiles lab
+  notes: In the browser lab, load the starter example. You start in the lab home.
+    Run a plain list, then list all so dotfiles appear. Open bashrc, then change into
+    the chip project and inspect gitignore. Orient yourself with the listing and the
+    preview panel, try a few challenges, then practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — dotfiles
+  notes: In the real Unix track, open this module’s dotfiles example folder. List
+    with a plain list—you mostly see the visible files. List all, then list all in
+    long format so hidden names and the hidden directory show up. Read the hidden
+    sample file and the sample rc so you see they are ordinary text. Optionally peek
+    at a few names in your real home with list-all and head—read only; do not edit
+    configs until you know what they do.
+- type: code
+  title: Real shell practice — try these
+  code: '# ls — plain list; dot-names stay hidden
+
+    ls
+
+
+    # ls -a — show all names, including those starting with a dot
+
+    ls -a
+
+
+    # ls -la — long listing that includes hidden names
+
+    ls -la
+
+
+    # cat .hidden_file — read a hidden file (safe inspect)
+
+    cat .hidden_file
+
+
+    # cat .sample_rc — read an example config-style dotfile
+
+    cat .sample_rc
+
+
+    # ls -a ~ | head -12 — peek at real home dotfiles (read-only)
+
+    ls -a ~ | head -12
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not edit bashrc or profile until you understand the change, a typo can break
+    new shells
+  - 'Prefer read tools first: cat or less'
+  - Remember that star globs often skip leading-dot names unless you ask for them
+  - And remember
+  notes: 'Do not edit bashrc or profile until you understand the change—a typo can
+    break new shells. Prefer read tools first: cat or less. Remember that star globs
+    often skip leading-dot names unless you ask for them. And remember: the browser
+    lab shows the idea; your real home and projects still live on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, practice plain list versus list-all
+  - When you are ready, take the short quiz, then continue to process list and signals
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, practice plain list
+    versus list-all, and read a couple of sample dotfiles. When you are ready, take
+    the short quiz, then continue to process list and signals.

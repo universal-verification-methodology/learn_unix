@@ -11,9 +11,9 @@ You will not memorize every flag
 ---
 
 ## Four ways to ask for help
-- Use the manual when you want the full story
-- Use a help flag when you need a quick reminder of options
-- Use whatis for a one-line summary
+- Use man when you want the full manual page for a command
+- Use a help flag, often two dashes help, when you need a short usage reminder
+- Use whatis for a one-line summary of what a command is
 - Use apropos when you remember the idea but not the command name
 - Pick the lightest tool that answers your question, then go back to work
 
@@ -32,8 +32,13 @@ You will not memorize every flag
 ## Real shell practice — try these
 
 ```
+# whatis — one-line summary of a command
 whatis ls
+
+# ls --help — short usage / flags; head keeps the first lines
 ls --help | head -n 12
+
+# man — full manual; MANPAGER=cat prints instead of interactive pager
 MANPAGER=cat man ls | head -n 20
 
 ```

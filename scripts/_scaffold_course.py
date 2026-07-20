@@ -516,7 +516,7 @@ def write_course_readme() -> None:
         "## Relationship to learn_unix_git",
         "",
         "Example trees were copied from `learn_unix_git` modules 1–5 and 8.",
-        "Git content stays in `learn_unix_git` until `learn_git` is scaffolded.",
+        "Git content lives in [`../learn_git/`](../learn_git/) (scaffolded from M6–8).",
         "",
         "## License",
         "",

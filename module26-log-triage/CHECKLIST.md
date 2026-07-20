@@ -3,14 +3,14 @@
 ## Track A — Real Unix
 
 - [ ] Worked through at least one example under `examples/` (see [EXAMPLES.md](EXAMPLES.md))
-- [ ] Repeated the key commands in `~/unix_practice` (or another writable tree)
-- [ ] Can explain the outcome in my own words
+- [ ] Used `tail` and `grep -i` on `sample.log`
+- [ ] Can explain fail vs env vs flake in my own words
 
 ## Track B — Browser lab (`log-triage`)
 
 - [ ] Opened the lab (local or live)
 - [ ] Loaded the starter example
-- [ ] Completed a few challenges (or noted the lab is still Coming soon)
+- [ ] Classified a few cases as fail, env, or flake
 
 ## Done when
 

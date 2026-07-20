@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-1.png'
+duration 17.208
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-2.png'
+duration 20.928
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-3.png'
+duration 22.176
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-4.png'
+duration 27.616
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-6.png'
+duration 20.808
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-7.png'
+duration 20.112
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/frames/slide-7.png'

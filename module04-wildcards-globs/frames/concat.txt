@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-1.png'
+duration 18.024
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-2.png'
+duration 26.352
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-3.png'
+duration 23.688
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-4.png'
+duration 21.328
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-6.png'
+duration 21.768
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-7.png'
+duration 20.184
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module04-wildcards-globs/frames/slide-7.png'

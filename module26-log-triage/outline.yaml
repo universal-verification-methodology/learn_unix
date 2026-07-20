@@ -1,12 +1,97 @@
-# Module 26 outline
-title: "Log / failure triage"
-kind: lab
-lab: log-triage
+title: Log and failure triage
+footer: learn_unix — log triage
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Log and failure triage
+  subtitle: When make sim fails, the log is your first stop, not a random rewrite
+    of the RTL
+  notes: 'When make sim fails, the log is your first stop—not a random rewrite of
+    the RTL. This module teaches triage: skim the end of the log, search for error
+    and warn lines, then classify the failure as a real design fail, an environment
+    problem, or a flake.'
+- type: bullets
+  title: Tail, grep, then classify
+  bullets:
+  - Start with the last lines, tail shows where the run stopped
+  - Grep for error and warn, case-insensitive, so you do not miss mixed case
+  - 'Ask: is this expect-got in the testbench'
+  - Classification decides whether you fix RTL, fix env, or chase timing
+  notes: 'Start with the last lines—tail shows where the run stopped. Grep for error
+    and warn, case-insensitive, so you do not miss mixed case. Ask: is this expect-got
+    in the testbench, command not found on PATH, or something that passes alone and
+    fails in parallel? Classification decides whether you fix RTL, fix env, or chase
+    timing.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Log triage lab
+  notes: In the browser lab, load the starter example. You will see short Make and
+    sim log snippets and buttons to mark fail, env, or flake. Read the cues, classify
+    a few cases, and notice how env failures look different from assertion mismatches.
+    Orient yourself with the case list and the challenge strip, then practice the
+    same search habits on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — log triage
+  notes: In the real Unix track, open this module’s sample log. Print where you are
+    and list the files. Count the lines, then show the last five so you see how the
+    run ended. Grep for error and warn, then for ERROR with line numbers. You will
+    reuse this pattern on every CI and local sim log.
+- type: code
+  title: Real shell practice — try these
+  code: '# pwd — print working directory (where am I?)
+
+    pwd
+
+
+    # ls -la — list all entries, long format (what is here?)
+
+    ls -la
+
+
+    # wc -l sample.log — count lines in the sample log
+
+    wc -l sample.log
+
+
+    # tail -5 sample.log — show the last five lines (how did it end?)
+
+    tail -5 sample.log
+
+
+    # grep -i error sample.log — find error lines, case-insensitive
+
+    grep -i error sample.log
+
+
+    # grep -i warn sample.log — find warn lines, case-insensitive
+
+    grep -i warn sample.log
+
+
+    # grep -n ERROR sample.log — ERROR matches with line numbers
+
+    grep -n ERROR sample.log
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not rewrite RTL when the log says command not found
+  - Do not ignore warn lines that foreshadow a timeout
+  - And remember
+  notes: 'Do not rewrite RTL when the log says command not found. Do not ignore warn
+    lines that foreshadow a timeout. And remember: the browser lab trains classification;
+    lasting skill means tail and grep on real logs before you change design.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, classify a few fail, env, and flake cases after the starter
+  - On the real shell, triage the sample log with tail and grep
+  - When you are ready, take the short quiz, then continue to env-file literacy
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    classify a few fail, env, and flake cases after the starter. On the real shell,
+    triage the sample log with tail and grep. When you are ready, take the short quiz,
+    then continue to env-file literacy.

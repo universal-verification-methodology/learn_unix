@@ -2,24 +2,34 @@
 
 Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
-## `sort_uniq/`
+## `sort_uniq/` (start here)
 
-See [`examples/sort_uniq/README.md`](examples/sort_uniq/README.md) if present.
+See [`examples/sort_uniq/README.md`](examples/sort_uniq/README.md).
 
-**Try:**
+**Try these** (from `examples/sort_uniq`):
 
 ```bash
-cd module12-sort-uniq-cut/examples/sort_uniq
-ls -la
+# cat names.txt — raw list with duplicates
+cat names.txt
+
+# sort names.txt — alphabetical; duplicates become adjacent
+sort names.txt
+
+# sort names.txt | uniq — unique lines
+sort names.txt | uniq
+
+# sort names.txt | uniq -c — unique lines with counts
+sort names.txt | uniq -c
+
+# sort numbers.txt — lexicographic (often wrong for numbers)
+sort numbers.txt
+
+# sort -n numbers.txt — numeric sort
+sort -n numbers.txt
 ```
 
 ## `cut_columns/`
 
-See [`examples/cut_columns/README.md`](examples/cut_columns/README.md) if present.
+See [`examples/cut_columns/README.md`](examples/cut_columns/README.md).
 
-**Try:**
-
-```bash
-cd module12-sort-uniq-cut/examples/cut_columns
-ls -la
-```
+**Try:** `cut -d',' -f1,3 csv_like.txt` and `cut -c1-5 fixed.txt`.

@@ -1,0 +1,48 @@
+{
+  "module": "module13-here-doc-lab",
+  "title": "Here-doc check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "cmd <<EOF … EOF feeds the body to the command’s…",
+      "choices": ["stdout", "stdin", "PATH", "umask"],
+      "answer": 1,
+      "explain": "A here-doc supplies multi-line stdin."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "<<'EOF' (quoted delimiter) typically…",
+      "choices": [
+        "Expands $HOME in the body",
+        "Leaves $VAR literal (no expansion)",
+        "Deletes the file EOF",
+        "Means the same as <<<"
+      ],
+      "answer": 1,
+      "explain": "Quoted delimiter disables parameter expansion in the body."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "<<< \"text\" is a here-string: one string becomes stdin.",
+      "answer": true,
+      "explain": "Here-string is the one-line form of feeding stdin."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "The closing EOF must usually be…",
+      "choices": [
+        "Indented with spaces freely",
+        "Alone on its line matching the opening delimiter",
+        "Written as eof lowercase only",
+        "Omitted if the file is short"
+      ],
+      "answer": 1,
+      "explain": "The end marker must match and typically sit alone on the line."
+    }
+  ]
+}

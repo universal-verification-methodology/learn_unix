@@ -1,0 +1,48 @@
+# real shell session (Track A)
+
+$ ls sample_project
+build
+docs
+scripts
+src
+tb
+
+$ find sample_project -type f
+sample_project/build/.gitkeep
+sample_project/docs/notes.md
+sample_project/scripts/build.sh
+sample_project/src/main.v
+sample_project/tb/test_main.v
+
+$ find ../find_grep -name '*.v'
+../find_grep/src/top.v
+../find_grep/src/util.v
+../find_grep/tb/tb_top.v
+
+$ grep -Rn CLOCK_SIGNAL ../find_grep --include='*.v'
+../find_grep/src/top.v:2:// Contains CLOCK_SIGNAL for grep -R practice.
+../find_grep/src/top.v:4:  input  wire CLOCK_SIGNAL,
+../find_grep/src/top.v:8:  always @(posedge CLOCK_SIGNAL or posedge rst) begin
+../find_grep/src/util.v:2:// Does not contain CLOCK_SIGNAL.
+../find_grep/tb/tb_top.v:2:// Contains CLOCK_SIGNAL for grep -R practice.
+../find_grep/tb/tb_top.v:4:  reg CLOCK_SIGNAL;
+../find_grep/tb/tb_top.v:7:  top u_dut (.CLOCK_SIGNAL(CLOCK_SIGNAL), .rst(rst), .out(out));
+../find_grep/tb/tb_top.v:9:    CLOCK_SIGNAL = 0;
+../find_grep/tb/tb_top.v:10:    forever #5 CLOCK_SIGNAL = ~CLOCK_SIGNAL;
+
+$ sed 's/old/new/g' ../sed_basics/sample.txt
+line one new text
+line two new and new again
+line three
+new at start
+
+$ diff -u ../diff_patch/original.txt ../diff_patch/modified.txt
+--- ../diff_patch/original.txt	2026-07-18 16:34:55.486570800 +0800
++++ ../diff_patch/modified.txt	2026-07-18 16:34:55.482542200 +0800
+@@ -1,4 +1,5 @@
+ Line one
+-Line two
++Line two (edited)
+ Line three
+ Line four
++Line five added

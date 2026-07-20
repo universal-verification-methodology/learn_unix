@@ -3,14 +3,14 @@
 ## Track A — Real Unix
 
 - [ ] Worked through at least one example under `examples/` (see [EXAMPLES.md](EXAMPLES.md))
-- [ ] Repeated the key commands in `~/unix_practice` (or another writable tree)
-- [ ] Can explain the outcome in my own words
+- [ ] Ran `make help`, `make`, `make run`, and `make clean` in `sample_project/`
+- [ ] Can explain targets, dependencies, and `.PHONY` in my own words
 
 ## Track B — Browser lab (`make-basics`)
 
 - [ ] Opened the lab (local or live)
 - [ ] Loaded the starter example
-- [ ] Completed a few challenges (or noted the lab is still Coming soon)
+- [ ] Completed a few challenges (run sim, touch RTL, see rebuild)
 
 ## Done when
 

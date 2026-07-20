@@ -3,14 +3,14 @@
 ## Track A — Real Unix
 
 - [ ] Worked through at least one example under `examples/` (see [EXAMPLES.md](EXAMPLES.md))
-- [ ] Repeated the key commands in `~/unix_practice` (or another writable tree)
-- [ ] Can explain the outcome in my own words
+- [ ] Ran `./remove_old.sh --dry-run` before a live run
+- [ ] Can explain preview → read list → live in my own words
 
 ## Track B — Browser lab (`dry-run-lab`)
 
 - [ ] Opened the lab (local or live)
 - [ ] Loaded the starter example
-- [ ] Completed a few challenges (or noted the lab is still Coming soon)
+- [ ] Completed a few challenges (prefer dry-run, preview cleans, then live)
 
 ## Done when
 

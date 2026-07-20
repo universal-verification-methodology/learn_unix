@@ -1,0 +1,27 @@
+# real shell session (Track A)
+
+$ mkdir -p /tmp/m07_perms && cp -f hello.sh config.txt /tmp/m07_perms/ && cd /tmp/m07_perms && chmod 644 hello.sh config.txt && ls -l
+total 8
+-rw-r--r-- 1 yongfu yongfu 145 Jul 20 03:03 config.txt
+-rw-r--r-- 1 yongfu yongfu 150 Jul 20 03:03 hello.sh
+
+$ chmod u+x hello.sh
+
+$ ls -l hello.sh
+-rwxr--r-- 1 yongfu yongfu 150 Jul 20 03:03 hello.sh
+
+$ ./hello.sh
+Hello from hello.sh — permissions example works!
+
+$ chmod 600 config.txt
+
+$ ls -l
+total 8
+-rw------- 1 yongfu yongfu 145 Jul 20 03:03 config.txt
+-rwxr--r-- 1 yongfu yongfu 150 Jul 20 03:03 hello.sh
+
+$ umask
+0022
+
+$ umask -S
+u=rwx,g=rx,o=rx

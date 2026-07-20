@@ -1,12 +1,109 @@
-# Module 13 outline
-title: "Here-doc / here-string"
-kind: lab
-lab: here-doc-lab
+title: Here-doc / here-string
+footer: learn_unix — here doc lab
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Here-doc / here-string
+  subtitle: Sometimes you need to feed a command several lines of input without creating
+    a temp file
+  notes: 'Sometimes you need to feed a command several lines of input without creating
+    a temp file. A here-document does that: you open with a delimiter, type the body,
+    and close with the same word. A here-string is the one-line cousin—handy for a
+    short phrase. This module makes both feel natural in scripts and one-off shell
+    work.'
+- type: bullets
+  title: Multi-line stdin vs one string
+  bullets:
+  - Less-than less-than EOF starts a here-doc
+  - Leave the delimiter unquoted if you want variables expanded
+  - Three less-thans with a string is a here-string, one chunk of text as stdin
+  - Prefer these over awkward echo pipes when the reader must run in the current shell
+  notes: 'Less-than less-than EOF starts a here-doc: everything until a line that
+    is exactly EOF becomes the command’s standard input. Leave the delimiter unquoted
+    if you want variables expanded; quote it if you want literal dollars. Three less-thans
+    with a string is a here-string—one chunk of text as stdin. Prefer these over awkward
+    echo pipes when the reader must run in the current shell.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Here-doc lab
+  notes: In the browser lab, load the starter example. Run cat with a three-line here-doc
+    and watch the body become stdin. Toggle the quoted delimiter so variables stay
+    literal. Try a here-string preset. Orient yourself with the body editor and the
+    contrast cards, try a few challenges, then practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — here-doc and here-string
+  notes: In the real Unix track, open this module’s here-doc example. Make the reader
+    script executable. Feed cat a two-line here-doc so you see the body printed. Grep
+    inside a here-doc for a matching word. Feed the reader script with a here-doc
+    so it echoes each line. Finish with a here-string into grep—one short string as
+    stdin. You will reuse this when scripts need inline config blocks.
+- type: code
+  title: Real shell practice — try these
+  code: '# chmod u+x read_stdin.sh — make the stdin reader executable
+
+    chmod u+x read_stdin.sh
+
+
+    # cat <<EOF … EOF — here-doc: multi-line body becomes cat’s stdin
+
+    cat <<EOF
+
+    line one
+
+    line two
+
+    EOF
+
+
+    # grep two <<EOF … EOF — search inside a here-doc body
+
+    grep two <<EOF
+
+    one
+
+    two
+
+    three
+
+    EOF
+
+
+    # ./read_stdin.sh <<EOF … EOF — feed the script via here-doc
+
+    ./read_stdin.sh <<EOF
+
+    fed via here-doc
+
+    EOF
+
+
+    # grep hi <<< "…" — here-string: one string as stdin
+
+    grep hi <<< "hi from here-string"
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - The closing delimiter must be alone on its line, no spaces, or the here-doc never
+    ends
+  - Unquoted EOF expands variables; quoted EOF does not, pick deliberately
+  - And remember
+  notes: 'The closing delimiter must be alone on its line—no spaces—or the here-doc
+    never ends. Unquoted EOF expands variables; quoted EOF does not—pick deliberately.
+    And remember: the browser lab shows the idea; real scripts still use here-docs
+    on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, practice a here-doc into cat and the reader script, plus a
+    here-string
+  - When you are ready, take the short quiz, then continue to shell history and reverse-search
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, practice a here-doc
+    into cat and the reader script, plus a here-string. When you are ready, take the
+    short quiz, then continue to shell history and reverse-search.

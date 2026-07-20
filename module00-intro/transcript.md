@@ -18,11 +18,11 @@ Every lab module offers two ways to practice. The real Unix track uses your own 
 
 ## Slide 4 — Set up the real Unix track
 
-Open a terminal. On Windows, prefer WSL. From the learn Unix course folder, run the scaffold script once. It creates a small practice tree under your home directory where checklist exercises can live safely. You will come back to that tree throughout the course.
+Open a terminal. On Windows, prefer WSL—Windows Subsystem for Linux—so you get a real Unix shell. From the learn Unix course folder, run the scaffold script once. That script only creates a small practice tree under your home directory where checklist exercises can live safely; it does not install course tools. You will come back to that tree throughout the course.
 
 ## Slide 5 — Set up the browser lab track
 
-From the monorepo, serve the platform folder with a simple local web server, then open the tools index in your browser. If you prefer, use the published tools site instead. Either way, you only need to confirm you can reach the labs—the next module will send you into a specific one.
+From the monorepo, serve the platform folder with a simple local web server, then open the tools index in your browser. Serving the folder means your browser can load the interactive labs as ordinary web pages. If you prefer, use the published tools site instead. Either way, you only need to confirm you can reach the labs—the next module will send you into a specific one.
 
 ## Slide 6 — How to move through modules
 

@@ -1,12 +1,99 @@
-# Module 14 outline
-title: "Shell history & reverse-search"
-kind: lab
-lab: shell-history
+title: Shell history & reverse-search
+footer: learn_unix — shell history
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Shell history & reverse-search
+  subtitle: You will type the same kinds of commands again and again, build, grep
+    a log, change directories
+  notes: You will type the same kinds of commands again and again—build, grep a log,
+    change directories. Shell history remembers what you ran so you can recall, edit,
+    and re-run without retyping. Reverse-search finds an older line by a substring.
+    This module makes history and the keyboard shortcuts feel natural.
+- type: bullets
+  title: Recall, edit, re-run
+  bullets:
+  - Arrow up and arrow down step through previous commands
+  - Ctrl+A and Ctrl+E jump to the start or end of the line
+  - Ctrl+R starts reverse incremental search
+  - The history builtin lists numbered entries
+  - Faster recall means less friction when you iterate on simulators and scripts
+  notes: Arrow up and arrow down step through previous commands. Ctrl+A and Ctrl+E
+    jump to the start or end of the line; Ctrl+U and Ctrl+K clear toward the start
+    or end. Ctrl+R starts reverse incremental search—type part of a past command,
+    then Enter to run the match. The history builtin lists numbered entries; bang-bang
+    re-runs the last command, and bang-number re-runs by index—use bang forms carefully.
+    Faster recall means less friction when you iterate on simulators and scripts.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Shell history lab
+  notes: In the browser lab, load the starter example. Press reverse-search or use
+    the button if the browser steals Ctrl+R, type make, and recall make test. Try
+    history, the up and down arrows, and bang-bang. Orient yourself with the terminal,
+    the history side panel, and the shortcut table, try a few challenges, then practice
+    on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — history listing
+  notes: In the real Unix track, open this module’s history example folder. Turn history
+    on for the session, seed a few typical commands, then list history so you see
+    numbered lines. Pipe history into tail for the recent slice, then into grep to
+    find a past grep or error search. On your own keyboard, practice arrow keys and
+    Ctrl+R—those do not show in a static screenshot, but they are the daily muscle
+    memory. You will reuse reverse-search whenever a long make or grep line is buried
+    in the past.
+- type: code
+  title: Real shell practice — try these
+  code: '# set -o history — enable history in this shell session
+
+    set -o history
+
+
+    # history -s … — add a line to history without running it (demo seed)
+
+    history -s ''pwd''
+
+    history -s ''ls -la''
+
+    history -s ''grep ERROR run.log''
+
+    history -s ''make sim''
+
+
+    # history — list numbered past commands
+
+    history
+
+
+    # history | tail -5 — show only the most recent entries
+
+    history | tail -5
+
+
+    # history | grep ERROR — find past commands that mention ERROR
+
+    history | grep ERROR
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Bang-number and bang-bang re-execute immediately
+  - Reverse-search can feel sticky; Ctrl+C cancels cleanly
+  - And remember
+  notes: 'Bang-number and bang-bang re-execute immediately—double-check the line before
+    you hit Enter on a destructive command. Reverse-search can feel sticky; Ctrl+C
+    cancels cleanly. And remember: the browser lab teaches the muscle memory; lasting
+    speed still comes from history and Ctrl+R on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, list history, search it with grep
+  - When you are ready, take the short quiz, then continue to aliases and functions
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, list history, search
+    it with grep, and practice Ctrl+R until recall feels automatic. When you are ready,
+    take the short quiz, then continue to aliases and functions.

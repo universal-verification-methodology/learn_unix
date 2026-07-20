@@ -1,0 +1,43 @@
+{
+  "module": "module05-file-types-lab",
+  "title": "File types check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In ls -l, the first character - means…",
+      "choices": ["directory", "regular file", "symlink", "socket"],
+      "answer": 1,
+      "explain": "A leading dash marks a regular file."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "In ls -l, the first character l means…",
+      "choices": ["long file", "symlink", "locked", "local only"],
+      "answer": 1,
+      "explain": "Letter l marks a symbolic link."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "readlink prints the target path of a symlink even if the target is missing.",
+      "answer": true,
+      "explain": "Broken links still store a target string; readlink shows it."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "rm on a symlink typically…",
+      "choices": [
+        "Deletes only the link name, not the target file",
+        "Always deletes the target file too",
+        "Formats the disk",
+        "Converts the link into a directory"
+      ],
+      "answer": 0,
+      "explain": "Removing a symlink removes the name; the target stays unless removed separately."
+    }
+  ]
+}

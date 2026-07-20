@@ -1,0 +1,26 @@
+# real shell session (Track A)
+
+$ chmod u+x show_pid.sh fail.sh
+
+$ ./show_pid.sh
+PID of this process: 99746
+Run 'echo $?' after this to see exit status (0 = success)
+
+$ echo $?
+0
+
+$ ./fail.sh || echo $?
+This script exits with status 1
+1
+
+$ ps aux | head -8 || true
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 167332 12952 ?        Ss   Jul17   0:09 /sbin/init
+root           2  0.0  0.0   2776  1928 ?        Sl   Jul17   0:00 /init
+root           7  0.0  0.0   2776   132 ?        Sl   Jul17   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          60  0.0  0.0  56200 15580 ?        S<s  Jul17   0:07 /lib/systemd/systemd-journald
+root          88  0.0  0.0  22380  6220 ?        Ss   Jul17   0:05 /lib/systemd/systemd-udevd
+root          96  0.0  0.0 153004  2228 ?        Ssl  Jul17   0:00 snapfuse /var/lib/snapd/snaps/chromium_3375.snap /snap/chromium/3375 -o ro,nodev,allow_other,suid
+root          98  0.0  0.0 153004  2232 ?        Ssl  Jul17   0:00 snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+
+$ sleep 60 & kill $!; wait 2>/dev/null || true

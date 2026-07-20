@@ -1,0 +1,48 @@
+{
+  "module": "module17-exit-status-lab",
+  "title": "Exit status check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "By convention, exit status 0 means…",
+      "choices": ["Failure", "Success", "Permission denied", "Command not found"],
+      "answer": 1,
+      "explain": "Zero is success; non-zero is failure or a specific error."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "$? is…",
+      "choices": [
+        "The current username",
+        "The exit status of the previous command",
+        "Always equal to $1",
+        "The shell’s PID only"
+      ],
+      "answer": 1,
+      "explain": "Check $? immediately; the next command overwrites it."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "cmd1 && cmd2 runs cmd2 only if cmd1 succeeded (exit 0).",
+      "answer": true,
+      "explain": "&& is success short-circuit; || runs the next command on failure."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "false || echo fallback typically…",
+      "choices": [
+        "Skips echo because false failed",
+        "Runs echo because false failed (non-zero)",
+        "Deletes the file named fallback",
+        "Always exits the shell"
+      ],
+      "answer": 1,
+      "explain": "|| runs the right-hand command when the left-hand status is non-zero."
+    }
+  ]
+}

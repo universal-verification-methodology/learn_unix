@@ -1,12 +1,93 @@
-# Module 04 outline
-title: "Globs & wildcards"
-kind: lab
-lab: wildcards-globs
+title: Globs & wildcards
+footer: learn_unix — wildcards globs
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Globs & wildcards
+  subtitle: When you work with many Verilog files or log files, you do not want to
+    type every name
+  notes: When you work with many Verilog files or log files, you do not want to type
+    every name. Globs—also called wildcards—let the shell expand a pattern into a
+    list of matching filenames before the command runs. This module makes star, question
+    mark, and brackets feel natural.
+- type: bullets
+  title: Star, question mark, brackets
+  bullets:
+  - Star matches any sequence of characters
+  - Question mark matches exactly one character, handy for data underscore question-mark
+    log
+  - Brackets match one character from a set or a range, like a, b, or c in square
+    brackets
+  - The shell expands these patterns first; the command only sees the resulting names
+  notes: Star matches any sequence of characters, including none—so star-dot-txt means
+    every file ending in that extension. Question mark matches exactly one character—handy
+    for data underscore question-mark log. Brackets match one character from a set
+    or a range, like a, b, or c in square brackets. The shell expands these patterns
+    first; the command only sees the resulting names.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Globs and wildcards lab
+  notes: In the browser lab, load the starter example. The pattern starts as star-dot-txt—watch
+    which names light up. Try a question-mark pattern for the log files, then a star
+    pattern, and notice that hidden names like gitignore are not matched by a bare
+    star. Orient yourself with the pattern box and the file list, try a few challenges,
+    then practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — globs and wildcards
+  notes: In the real Unix track, open this module’s wildcards example folder. List
+    everything so you see the sample names. Then list only text files with a star
+    pattern. Narrow to reports with a prefix and a star. Use a question mark for the
+    numbered logs. Match the single-letter text files with a character class. You
+    will use the same idea later for source files and build logs.
+- type: code
+  title: Real shell practice — try these
+  code: '# ls — see every name in this folder first
+
+    ls
+
+
+    # ls *.txt — star matches any sequence; list all .txt files
+
+    ls *.txt
+
+
+    # ls report_*.txt — star after a prefix; only report_… text files
+
+    ls report_*.txt
+
+
+    # ls data_?.log — question mark matches exactly one character
+
+    ls data_?.log
+
+
+    # ls [abc].txt — brackets: one character from the set a, b, or c
+
+    ls [abc].txt
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - The shell expands the pattern before the command runs
+  - If nothing matches, bash may leave the pattern literal
+  - Always list a destructive pattern first
+  - And remember
+  notes: 'The shell expands the pattern before the command runs—so remove-star-dot-log
+    becomes a list of real filenames. If nothing matches, bash may leave the pattern
+    literal. Always list a destructive pattern first. And remember: the browser lab
+    shows the idea; real projects still need globs on a real shell for scripts and
+    simulators.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, practice star, question mark
+  - When you are ready, take the short quiz, then continue to file types and links
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, practice star, question
+    mark, and brackets on this module’s sample files. When you are ready, take the
+    short quiz, then continue to file types and links.

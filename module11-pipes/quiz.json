@@ -1,0 +1,53 @@
+{
+  "module": "module11-pipes",
+  "title": "Pipes check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In cmd1 | cmd2, what happens?",
+      "choices": [
+        "cmd2’s stdout becomes cmd1’s stdin",
+        "cmd1’s stdout becomes cmd2’s stdin",
+        "Both commands write only to disk",
+        "The pipe deletes cmd1"
+      ],
+      "answer": 1,
+      "explain": "The pipe connects left stdout to right stdin."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "grep -i error file means…",
+      "choices": [
+        "Only exact lowercase error",
+        "Case-insensitive match for error",
+        "Invert match",
+        "Count only"
+      ],
+      "answer": 1,
+      "explain": "-i ignores case (ERROR, Error, error)."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "command > file overwrites file with stdout; command >> file appends.",
+      "answer": true,
+      "explain": "> truncates/overwrites; >> appends."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "2>&1 typically means…",
+      "choices": [
+        "Ignore all errors",
+        "Send stderr to the same place as stdout",
+        "Run two shells",
+        "Disable pipes"
+      ],
+      "answer": 1,
+      "explain": "2>&1 merges stderr into stdout’s destination."
+    }
+  ]
+}

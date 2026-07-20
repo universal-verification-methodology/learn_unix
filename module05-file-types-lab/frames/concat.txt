@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-1.png'
+duration 21.816
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-2.png'
+duration 23.592
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-3.png'
+duration 20.568
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-4.png'
+duration 20.584
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-6.png'
+duration 19.464
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-7.png'
+duration 19.848
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module05-file-types-lab/frames/slide-7.png'

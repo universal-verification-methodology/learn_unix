@@ -1,12 +1,103 @@
-# Module 15 outline
-title: "Alias & functions"
-kind: lab
-lab: alias-lab
+title: Alias & functions
+footer: learn_unix — alias lab
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Alias & functions
+  subtitle: Typing the same long command again and again is slow
+  notes: Typing the same long command again and again is slow. An alias is a short
+    name for a fixed command string. A shell function is a named block that can take
+    arguments and run several steps. This module shows when to use each—and how they
+    differ from a separate script file.
+- type: bullets
+  title: Shortcut vs helper with args
+  bullets:
+  - An alias expands to text before the shell runs the line
+  - Aliases are awkward with real arguments; prefer a function when you need `$1`
+    or `"$@"`
+  - Functions run in the current shell, so they can change directory or set variables
+    for you
+  - Scripts run in a subshell, better when you want a file to share and version
+  - Session aliases and functions vanish when the shell exits unless you add them
+    to your
+  notes: An alias expands to text before the shell runs the line—great for `ll` meaning
+    a long listing. Aliases are awkward with real arguments; prefer a function when
+    you need `$1` or `"$@"`. Functions run in the current shell, so they can change
+    directory or set variables for you. Scripts run in a subshell—better when you
+    want a file to share and version. Session aliases and functions vanish when the
+    shell exits unless you add them to your startup file.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Alias lab
+  notes: In the browser lab, load the starter example. You get an `ll` alias and a
+    `greet` function—run `ll`, then `greet lab`, and notice how arguments work differently.
+    Orient yourself with the terminal, the definitions table, and the alias-versus-function
+    cards. Try a few challenges, then practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — alias and function
+  notes: In the real Unix track, open this module’s aliases example. Define `ll` as
+    a long listing shortcut, run it, then list aliases and filter for `ll`. Define
+    a tiny `greet` function that prints Hello and the first argument, call it with
+    a name, and use `type` to see that it is a function. Finish by removing the alias
+    with `unalias`. Persist only after you are comfortable—add lines to your shell
+    startup file and reload. You will reuse short helpers every day in project directories.
+- type: code
+  title: Real shell practice — try these
+  code: '# alias ll=''…'' — define a session alias for a long listing
+
+    alias ll=''ls -alF''
+
+
+    # ll — run the alias (expands to ls -alF)
+
+    ll
+
+
+    # alias | grep ll — list aliases and keep lines matching ll
+
+    alias | grep ll
+
+
+    # greet() { … } — define a function that uses the first argument
+
+    greet() { echo Hello "$1"; }
+
+
+    # greet Alice — call the function with one argument
+
+    greet Alice
+
+
+    # type greet — show whether greet is an alias, function, or command
+
+    type greet
+
+
+    # unalias ll — remove the ll alias from this session
+
+    unalias ll
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not put spaces around the equals in `alias name='cmd'`
+  - Remember aliases do not take arguments the way functions do
+  - And remember
+  notes: 'Do not put spaces around the equals in `alias name=''cmd''`. Remember aliases
+    do not take arguments the way functions do—use a function when you need `$1`.
+    And remember: the browser lab teaches the idea; lasting shortcuts still live in
+    your real shell startup file.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, define an alias and a small function, then try `type` and `unalias`
+  - When you are ready, take the short quiz, then continue to script control flow
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, define an alias
+    and a small function, then try `type` and `unalias`. When you are ready, take
+    the short quiz, then continue to script control flow.

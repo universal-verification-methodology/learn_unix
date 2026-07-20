@@ -1,0 +1,23 @@
+# real shell session (Track A)
+
+$ set -o history
+
+$ history -s 'pwd'
+$ history -s 'ls -la'
+$ history -s 'grep ERROR run.log'
+$ history -s 'make sim'
+
+$ history
+    1  pwd
+    2  ls -la
+    3  grep ERROR run.log
+    4  make sim
+
+$ history | tail -5
+    1  pwd
+    2  ls -la
+    3  grep ERROR run.log
+    4  make sim
+
+$ history | grep ERROR
+    3  grep ERROR run.log

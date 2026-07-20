@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-1.png'
+duration 25.104
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-2.png'
+duration 27.12
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-3.png'
+duration 21.384
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-4.png'
+duration 23.128
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-6.png'
+duration 17.064
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-7.png'
+duration 19.752
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module19-project-archives/frames/slide-7.png'

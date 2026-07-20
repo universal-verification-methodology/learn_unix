@@ -1,0 +1,314 @@
+# real shell session (Track A)
+
+$ cd <git-repo-root> && pwd
+/mnt/d/proj/designs/learning
+
+$ chmod u+x check_ready.sh
+
+$ ./check_ready.sh   # status + log; exit 1 if dirty
+=== git status ===
+ m courses/learn_unix_git
+ M platform/README.md
+ M platform/assets/site.css
+ M platform/index.html
+ M platform/simulator.md
+ M platform/tools.md
+ M platform/tools/index.html
+ M platform/vendor/systemverilog-simulator/src/elaborate.js
+ M platform/vendor/systemverilog-simulator/src/eval-expr.js
+ M platform/vendor/systemverilog-simulator/src/index.js
+ M platform/vendor/systemverilog-simulator/src/lexer.js
+ M platform/vendor/systemverilog-simulator/src/parse-module.js
+ M platform/vendor/systemverilog-simulator/src/parse-udp.js
+ M platform/vendor/systemverilog-simulator/src/parser.js
+ M platform/vendor/systemverilog-simulator/src/preprocess.js
+ M platform/vendor/systemverilog-simulator/src/session.js
+ M platform/vendor/systemverilog-simulator/src/sim.js
+?? .cursor/
+?? courses/learn_digital/
+?? courses/learn_git/
+?? courses/learn_i2c/
+?? courses/learn_iverilog/
+?? courses/learn_spi/
+?? courses/learn_systemverilog/
+?? courses/learn_uart/
+?? courses/learn_unix/
+?? courses/learn_uvm2017/
+?? courses/learn_verilator/
+?? courses/learn_verilog/
+?? platform/syllabus.md
+?? platform/tools/alias-lab/
+?? platform/tools/ansi-ports/
+?? platform/tools/ascii-hex/
+?? platform/tools/async-fifo/
+?? platform/tools/backup-clean/
+?? platform/tools/barrel-shifter/
+?? platform/tools/bcd-lab/
+?? platform/tools/bit-fields/
+?? platform/tools/bit-vs-logic/
+?? platform/tools/block-diagram/
+?? platform/tools/booth-encode/
+?? platform/tools/branch-strategy/
+?? platform/tools/byte-enable-mem/
+?? platform/tools/carry-select-adder/
+?? platform/tools/cdc-sync/
+?? platform/tools/clock-enable/
+?? platform/tools/commit-message-lab/
+?? platform/tools/counter-lab/
+?? platform/tools/delay-event-wait/
+?? platform/tools/dont-care-lab/
+?? platform/tools/dotfiles-lab/
+?? platform/tools/dry-run-lab/
+?? platform/tools/dual-port-ram/
+?? platform/tools/endian-lab/
+?? platform/tools/env-file-lab/
+?? platform/tools/exit-status-lab/
+?? platform/tools/file-types-lab/
+?? platform/tools/fixed-point/
+?? platform/tools/fork-join/
+?? platform/tools/git-cherry-pick-lab/
+?? platform/tools/git-log-lab/
+?? platform/tools/git-mental-model/
+?? platform/tools/git-rebase-merge/
+?? platform/tools/git-reflog/
+?? platform/tools/git-stash-lab/
+?? platform/tools/git-tags-lab/
+?? platform/tools/git-undo-safe/
+?? platform/tools/gitignore-lab/
+?? platform/tools/gray-code/
+?? platform/tools/gtkwave-cursors/
+?? platform/tools/half-full-adder/
+?? platform/tools/here-doc-lab/
+?? platform/tools/i2c-lab/
+?? platform/tools/ieee-version-map/
+?? platform/tools/job-control-lab/
+?? platform/tools/lfsr-lab/
+?? platform/tools/link-relative/
+?? platform/tools/localparam-lab/
+?? platform/tools/log-triage/
+?? platform/tools/logic-hazards/
+?? platform/tools/make-basics/
+?? platform/tools/man-help-lab/
+?? platform/tools/module-diagram/
+?? platform/tools/multi-dim-arrays/
+?? platform/tools/named-vs-positional/
+?? platform/tools/one-driver/
+?? platform/tools/overflow-wrap/
+?? platform/tools/parity-checksum/
+?? platform/tools/path-abs-rel/
+?? platform/tools/pipeline-hazards/
+?? platform/tools/pr-review-lab/
+?? platform/tools/ps-kill-lab/
+?? platform/tools/realpath-resolve/
+?? platform/tools/remote-tracking/
+?? platform/tools/reset-timelines/
+?? platform/tools/ring-johnson/
+?? platform/tools/safe-scripting/
+?? platform/tools/setup-hold/
+?? platform/tools/seven-segment/
+?? platform/tools/shell-history/
+?? platform/tools/shift-register-lab/
+?? platform/tools/signed-arith/
+?? platform/tools/signed-width/
+?? platform/tools/sop-pos/
+?? platform/tools/sort-uniq-cut/
+?? platform/tools/spi-multi-cs/
+?? platform/tools/spi-step/
+?? platform/tools/submission-repro/
+?? platform/tools/submodule-pitfalls/
+?? platform/tools/sv-always-procs/
+?? platform/tools/sv-case-unique/
+?? platform/tools/sv-checker/
+?? platform/tools/sv-generate/
+?? platform/tools/sv-inside/
+?? platform/tools/sv-interfaces/
+?? platform/tools/sv-migration/
+?? platform/tools/sv-packages/
+?? platform/tools/sv-typedefs/
+?? platform/tools/task-vs-function/
+?? platform/tools/tb-anatomy/
+?? platform/tools/template-clone/
+?? platform/tools/tri-state-bus/
+?? platform/tools/twos-complement/
+?? platform/tools/uart-errors/
+?? platform/tools/uart-frame/
+?? platform/tools/uart-oversample/
+?? platform/tools/waveform-lab/
+?? platform/tools/wildcards-globs/
+?? platform/tools/wire-vs-reg/
+?? platform/tools/xor-parity-tree/
+?? platform/tools/zip-vs-tar/
+?? platform/vendor/systemverilog-simulator/src/config.js
+?? platform/vendor/systemverilog-simulator/src/elab-config.js
+?? platform/vendor/systemverilog-simulator/src/elab-interface.js
+?? platform/vendor/systemverilog-simulator/src/elab-specify.js
+?? platform/vendor/systemverilog-simulator/src/interface.js
+?? platform/vendor/systemverilog-simulator/src/parse-config.js
+?? platform/vendor/systemverilog-simulator/src/parse-interface.js
+?? platform/vendor/systemverilog-simulator/src/parse-specify.js
+?? platform/vendor/systemverilog-simulator/src/specify.js
+?? syllabus.md
+
+=== Last 3 commits (what would be pushed) ===
+d696727 update
+d5d3f8e update
+563bf7b update
+
+You have uncommitted changes. Commit or stash before pushing.
+
+$ ./check_ready.sh
+=== git status ===
+ m courses/learn_unix_git
+ M platform/README.md
+ M platform/assets/site.css
+ M platform/index.html
+ M platform/simulator.md
+ M platform/tools.md
+ M platform/tools/index.html
+ M platform/vendor/systemverilog-simulator/src/elaborate.js
+ M platform/vendor/systemverilog-simulator/src/eval-expr.js
+ M platform/vendor/systemverilog-simulator/src/index.js
+ M platform/vendor/systemverilog-simulator/src/lexer.js
+ M platform/vendor/systemverilog-simulator/src/parse-module.js
+ M platform/vendor/systemverilog-simulator/src/parse-udp.js
+ M platform/vendor/systemverilog-simulator/src/parser.js
+ M platform/vendor/systemverilog-simulator/src/preprocess.js
+ M platform/vendor/systemverilog-simulator/src/session.js
+ M platform/vendor/systemverilog-simulator/src/sim.js
+?? .cursor/
+?? courses/learn_digital/
+?? courses/learn_git/
+?? courses/learn_i2c/
+?? courses/learn_iverilog/
+?? courses/learn_spi/
+?? courses/learn_systemverilog/
+?? courses/learn_uart/
+?? courses/learn_unix/
+?? courses/learn_uvm2017/
+?? courses/learn_verilator/
+?? courses/learn_verilog/
+?? platform/syllabus.md
+?? platform/tools/alias-lab/
+?? platform/tools/ansi-ports/
+?? platform/tools/ascii-hex/
+?? platform/tools/async-fifo/
+?? platform/tools/backup-clean/
+?? platform/tools/barrel-shifter/
+?? platform/tools/bcd-lab/
+?? platform/tools/bit-fields/
+?? platform/tools/bit-vs-logic/
+?? platform/tools/block-diagram/
+?? platform/tools/booth-encode/
+?? platform/tools/branch-strategy/
+?? platform/tools/byte-enable-mem/
+?? platform/tools/carry-select-adder/
+?? platform/tools/cdc-sync/
+?? platform/tools/clock-enable/
+?? platform/tools/commit-message-lab/
+?? platform/tools/counter-lab/
+?? platform/tools/delay-event-wait/
+?? platform/tools/dont-care-lab/
+?? platform/tools/dotfiles-lab/
+?? platform/tools/dry-run-lab/
+?? platform/tools/dual-port-ram/
+?? platform/tools/endian-lab/
+?? platform/tools/env-file-lab/
+?? platform/tools/exit-status-lab/
+?? platform/tools/file-types-lab/
+?? platform/tools/fixed-point/
+?? platform/tools/fork-join/
+?? platform/tools/git-cherry-pick-lab/
+?? platform/tools/git-log-lab/
+?? platform/tools/git-mental-model/
+?? platform/tools/git-rebase-merge/
+?? platform/tools/git-reflog/
+?? platform/tools/git-stash-lab/
+?? platform/tools/git-tags-lab/
+?? platform/tools/git-undo-safe/
+?? platform/tools/gitignore-lab/
+?? platform/tools/gray-code/
+?? platform/tools/gtkwave-cursors/
+?? platform/tools/half-full-adder/
+?? platform/tools/here-doc-lab/
+?? platform/tools/i2c-lab/
+?? platform/tools/ieee-version-map/
+?? platform/tools/job-control-lab/
+?? platform/tools/lfsr-lab/
+?? platform/tools/link-relative/
+?? platform/tools/localparam-lab/
+?? platform/tools/log-triage/
+?? platform/tools/logic-hazards/
+?? platform/tools/make-basics/
+?? platform/tools/man-help-lab/
+?? platform/tools/module-diagram/
+?? platform/tools/multi-dim-arrays/
+?? platform/tools/named-vs-positional/
+?? platform/tools/one-driver/
+?? platform/tools/overflow-wrap/
+?? platform/tools/parity-checksum/
+?? platform/tools/path-abs-rel/
+?? platform/tools/pipeline-hazards/
+?? platform/tools/pr-review-lab/
+?? platform/tools/ps-kill-lab/
+?? platform/tools/realpath-resolve/
+?? platform/tools/remote-tracking/
+?? platform/tools/reset-timelines/
+?? platform/tools/ring-johnson/
+?? platform/tools/safe-scripting/
+?? platform/tools/setup-hold/
+?? platform/tools/seven-segment/
+?? platform/tools/shell-history/
+?? platform/tools/shift-register-lab/
+?? platform/tools/signed-arith/
+?? platform/tools/signed-width/
+?? platform/tools/sop-pos/
+?? platform/tools/sort-uniq-cut/
+?? platform/tools/spi-multi-cs/
+?? platform/tools/spi-step/
+?? platform/tools/submission-repro/
+?? platform/tools/submodule-pitfalls/
+?? platform/tools/sv-always-procs/
+?? platform/tools/sv-case-unique/
+?? platform/tools/sv-checker/
+?? platform/tools/sv-generate/
+?? platform/tools/sv-inside/
+?? platform/tools/sv-interfaces/
+?? platform/tools/sv-migration/
+?? platform/tools/sv-packages/
+?? platform/tools/sv-typedefs/
+?? platform/tools/task-vs-function/
+?? platform/tools/tb-anatomy/
+?? platform/tools/template-clone/
+?? platform/tools/tri-state-bus/
+?? platform/tools/twos-complement/
+?? platform/tools/uart-errors/
+?? platform/tools/uart-frame/
+?? platform/tools/uart-oversample/
+?? platform/tools/waveform-lab/
+?? platform/tools/wildcards-globs/
+?? platform/tools/wire-vs-reg/
+?? platform/tools/xor-parity-tree/
+?? platform/tools/zip-vs-tar/
+?? platform/vendor/systemverilog-simulator/src/config.js
+?? platform/vendor/systemverilog-simulator/src/elab-config.js
+?? platform/vendor/systemverilog-simulator/src/elab-interface.js
+?? platform/vendor/systemverilog-simulator/src/elab-specify.js
+?? platform/vendor/systemverilog-simulator/src/interface.js
+?? platform/vendor/systemverilog-simulator/src/parse-config.js
+?? platform/vendor/systemverilog-simulator/src/parse-interface.js
+?? platform/vendor/systemverilog-simulator/src/parse-specify.js
+?? platform/vendor/systemverilog-simulator/src/specify.js
+?? syllabus.md
+
+=== Last 3 commits (what would be pushed) ===
+d696727 update
+d5d3f8e update
+563bf7b update
+
+You have uncommitted changes. Commit or stash before pushing.
+
+$ which make
+/usr/bin/make
+
+$ make --version | head -n 1
+GNU Make 4.3

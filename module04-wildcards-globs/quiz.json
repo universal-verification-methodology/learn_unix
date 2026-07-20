@@ -1,0 +1,53 @@
+{
+  "module": "module04-wildcards-globs",
+  "title": "Globs check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In a shell glob, * matches…",
+      "choices": [
+        "Exactly one character",
+        "Any sequence of characters (including none)",
+        "Only digits",
+        "Only hidden files"
+      ],
+      "answer": 1,
+      "explain": "Asterisk is “any sequence,” including empty."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "data_?.log matches which idea?",
+      "choices": [
+        "Any number of characters after data_",
+        "Exactly one character between data_ and .log",
+        "Only the literal string data_?.log",
+        "Every file in the tree"
+      ],
+      "answer": 1,
+      "explain": "Question mark matches exactly one character."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "The shell expands wildcards before the command runs.",
+      "answer": true,
+      "explain": "rm *.log becomes a list of matching names first."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "ls [abc].txt is best described as…",
+      "choices": [
+        "Matching a, b, or c as the basename before .txt",
+        "Matching any three-letter name",
+        "Matching only hidden files",
+        "A relative path from home"
+      ],
+      "answer": 0,
+      "explain": "Brackets match one character from the listed set."
+    }
+  ]
+}

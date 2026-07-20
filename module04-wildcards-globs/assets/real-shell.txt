@@ -1,0 +1,32 @@
+# real shell session (Track A)
+
+$ ls
+README.md
+a.txt
+b.txt
+c.txt
+data_1.log
+data_2.log
+design.v
+report_2023.txt
+report_2024.txt
+
+$ ls *.txt
+a.txt
+b.txt
+c.txt
+report_2023.txt
+report_2024.txt
+
+$ ls report_*.txt
+report_2023.txt
+report_2024.txt
+
+$ ls data_?.log
+data_1.log
+data_2.log
+
+$ ls [abc].txt
+a.txt
+b.txt
+c.txt

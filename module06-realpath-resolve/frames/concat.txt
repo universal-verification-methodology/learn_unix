@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-1.png'
+duration 20.688
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-2.png'
+duration 22.968
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-3.png'
+duration 21.816
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-4.png'
+duration 22.072
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-6.png'
+duration 22.104
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-7.png'
+duration 20.232
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module06-realpath-resolve/frames/slide-7.png'

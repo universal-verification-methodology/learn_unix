@@ -1,0 +1,14 @@
+# real shell session (Track A)
+
+$ chmod u+x count_lines.sh
+
+$ ./count_lines.sh
+a.log: 3 lines
+b.log: 5 lines
+c.log: 2 lines
+
+$ wc -l *.log
+ 3 a.log
+ 5 b.log
+ 2 c.log
+10 total

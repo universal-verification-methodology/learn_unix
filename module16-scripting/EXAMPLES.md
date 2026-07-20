@@ -4,55 +4,57 @@ Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
 ## `script_basics/`
 
-See [`examples/script_basics/README.md`](examples/script_basics/README.md) if present.
-
-**Try:**
+See [`examples/script_basics/README.md`](examples/script_basics/README.md).
 
 ```bash
 cd module16-scripting/examples/script_basics
-ls -la
+chmod u+x say_hello.sh
+./say_hello.sh
+bash say_hello.sh
 ```
 
 ## `arguments/`
 
-See [`examples/arguments/README.md`](examples/arguments/README.md) if present.
-
-**Try:**
+See [`examples/arguments/README.md`](examples/arguments/README.md).
 
 ```bash
 cd module16-scripting/examples/arguments
-ls -la
+chmod u+x greet.sh
+./greet.sh Alice
+./greet.sh "Bob Smith"
+./greet.sh
 ```
 
 ## `control_flow/`
 
-See [`examples/control_flow/README.md`](examples/control_flow/README.md) if present.
-
-**Try:**
+See [`examples/control_flow/README.md`](examples/control_flow/README.md).
 
 ```bash
 cd module16-scripting/examples/control_flow
-ls -la
+chmod u+x count_lines.sh
+./count_lines.sh
+wc -l *.log
 ```
 
 ## `case_statement/`
 
-See [`examples/case_statement/README.md`](examples/case_statement/README.md) if present.
-
-**Try:**
+See [`examples/case_statement/README.md`](examples/case_statement/README.md).
 
 ```bash
 cd module16-scripting/examples/case_statement
-ls -la
+chmod u+x greet.sh
+./greet.sh hello
+./greet.sh bye
+./greet.sh other
 ```
 
 ## `read_input/`
 
-See [`examples/read_input/README.md`](examples/read_input/README.md) if present.
-
-**Try:**
+See [`examples/read_input/README.md`](examples/read_input/README.md).
 
 ```bash
 cd module16-scripting/examples/read_input
-ls -la
+chmod u+x prompt_name.sh confirm.sh
+# interactive: follow the prompts
+./prompt_name.sh
 ```

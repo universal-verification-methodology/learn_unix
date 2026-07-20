@@ -3,14 +3,14 @@
 ## Track A — Real Unix
 
 - [ ] Worked through at least one example under `examples/` (see [EXAMPLES.md](EXAMPLES.md))
-- [ ] Repeated the key commands in `~/unix_practice` (or another writable tree)
-- [ ] Can explain the outcome in my own words
+- [ ] Sourced `sample.env` (or ran `use_env.sh`) and saw the variables print
+- [ ] Can explain example vs real env files and why secrets stay out of Git
 
 ## Track B — Browser lab (`env-file-lab`)
 
 - [ ] Opened the lab (local or live)
 - [ ] Loaded the starter example
-- [ ] Completed a few challenges (or noted the lab is still Coming soon)
+- [ ] Completed a few challenges (load order, which layer wins)
 
 ## Done when
 

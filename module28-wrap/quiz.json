@@ -1,0 +1,53 @@
+{
+  "module": "module28-wrap",
+  "title": "Unix path complete check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This wrap module mainly…",
+      "choices": [
+        "Introduces a new browser lab",
+        "Recaps what you can do and points to learn_git",
+        "Installs Verilator for you",
+        "Replaces Track A forever"
+      ],
+      "answer": 1,
+      "explain": "Wrap modules recap outcomes and link the next course."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "If you mostly used browser labs, a good next step before Git is…",
+      "choices": [
+        "Never open a terminal",
+        "Spend a short real-shell session on navigation, pipes, and scripting",
+        "Delete your practice tree",
+        "Skip all Make modules"
+      ],
+      "answer": 1,
+      "explain": "Git and EDA tools expect real-shell comfort; close the Track A gaps."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Absolute vs relative paths and how globs expand are core skills to keep before learn_git.",
+      "answer": true,
+      "explain": "Path and glob literacy underpins almost every shell and Git command."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "The recommended next course after learn_unix is…",
+      "choices": [
+        "learn_git",
+        "Skip straight to UVM",
+        "Only PowerPoint",
+        "Uninstall WSL"
+      ],
+      "answer": 0,
+      "explain": "The syllabus next step is learn_git for coursework through delivery."
+    }
+  ]
+}

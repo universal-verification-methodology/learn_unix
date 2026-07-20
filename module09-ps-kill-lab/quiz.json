@@ -1,0 +1,48 @@
+{
+  "module": "module09-ps-kill-lab",
+  "title": "Processes check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Exit status 0 usually means…",
+      "choices": ["Failure", "Success", "The process is still running", "Permission denied only"],
+      "answer": 1,
+      "explain": "By convention, 0 is success; non-zero is failure."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "echo $? prints…",
+      "choices": [
+        "Your username",
+        "The exit status of the previous command",
+        "The next free PID",
+        "The umask"
+      ],
+      "answer": 1,
+      "explain": "$? is the exit status of the last foreground command."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Ctrl+C in the terminal sends an interrupt signal to the foreground process.",
+      "answer": true,
+      "explain": "Ctrl+C delivers SIGINT to the foreground job."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "kill -9 is best described as…",
+      "choices": [
+        "A polite terminate that processes can catch",
+        "A last-resort force kill that cannot be caught",
+        "A way to list processes",
+        "The same as Ctrl+Z"
+      ],
+      "answer": 1,
+      "explain": "SIGKILL (-9) cannot be caught; use it only when gentler signals fail."
+    }
+  ]
+}

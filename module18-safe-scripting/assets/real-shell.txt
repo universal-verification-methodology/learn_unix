@@ -1,0 +1,15 @@
+# real shell session (Track A)
+
+$ ls tmp/
+cache1.tmp
+cache2.tmp
+
+$ chmod u+x clean_tmp.sh
+
+$ ./clean_tmp.sh
+Would delete: tmp/cache1.tmp (run with --confirm to actually delete)
+Would delete: tmp/cache2.tmp (run with --confirm to actually delete)
+
+$ ls tmp/
+cache1.tmp
+cache2.tmp

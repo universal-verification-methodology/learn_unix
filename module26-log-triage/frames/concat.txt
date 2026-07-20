@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-1.png'
+duration 16.896
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-2.png'
+duration 23.16
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-3.png'
+duration 23.52
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-4.png'
+duration 14.968
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-6.png'
+duration 15.864
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-7.png'
+duration 20.136
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module26-log-triage/frames/slide-7.png'

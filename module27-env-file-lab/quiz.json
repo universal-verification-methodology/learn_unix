@@ -1,0 +1,53 @@
+{
+  "module": "module27-env-file-lab",
+  "title": ".env literacy check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does source sample.env do?",
+      "choices": [
+        "Deletes the file",
+        "Runs the file in the current shell so KEY=value lines become variables",
+        "Commits secrets to Git",
+        "Formats the disk"
+      ],
+      "answer": 1,
+      "explain": "source (or .) executes the file in the current shell, setting variables."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which file is usually safe to commit?",
+      "choices": [
+        ".env with API tokens",
+        ".env.example with documented keys and safe defaults",
+        "Any file named secret.env",
+        "Only binary .env files"
+      ],
+      "answer": 1,
+      "explain": "Commit the example template; gitignore real .env / .env.local with secrets."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "KEY=value lines should not have spaces around the equals sign.",
+      "answer": true,
+      "explain": "Spaces break simple KEY=value parsing when sourcing."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "If make fails with TOOLS unset, a good first step is…",
+      "choices": [
+        "Rewrite all RTL",
+        "Source or export the project env (TOOLS path) then retry",
+        "rm -rf .git",
+        "Disable Make forever"
+      ],
+      "answer": 1,
+      "explain": "Missing TOOLS is an env literacy issue—load the file before blaming design."
+    }
+  ]
+}

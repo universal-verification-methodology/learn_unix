@@ -1,0 +1,53 @@
+{
+  "module": "module10-job-control-lab",
+  "title": "Job control check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "command & typically…",
+      "choices": [
+        "Runs command in the background",
+        "Deletes the command",
+        "Always kills the shell",
+        "Means the same as Ctrl+C"
+      ],
+      "answer": 0,
+      "explain": "Trailing & starts the command as a background job."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Ctrl+Z on a foreground job usually…",
+      "choices": [
+        "Kills it with SIGKILL",
+        "Suspends it (Stopped) — it can be resumed",
+        "Logs you out",
+        "Clears the screen only"
+      ],
+      "answer": 1,
+      "explain": "Ctrl+Z sends SIGTSTP — stop, not kill."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "fg brings a job to the foreground; bg resumes a stopped job in the background.",
+      "answer": true,
+      "explain": "fg / bg are the resume directions for shell jobs."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A common pattern for a long sim is…",
+      "choices": [
+        "Never redirect output",
+        "Run with > log 2>&1 & then inspect with tail",
+        "Only use kill -9 with no log",
+        "Disable jobs permanently"
+      ],
+      "answer": 1,
+      "explain": "Background + log + tail (or tail -f) is the usual workflow."
+    }
+  ]
+}

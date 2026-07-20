@@ -1,0 +1,48 @@
+{
+  "module": "module08-dotfiles-lab",
+  "title": "Dotfiles check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A file whose name starts with . is usually…",
+      "choices": [
+        "Deleted by ls",
+        "Hidden from plain ls (shown with ls -a)",
+        "Always executable",
+        "Only usable by root"
+      ],
+      "answer": 1,
+      "explain": "Dot-prefixed names are hidden unless you list with -a / -la."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which command reveals .bashrc in a directory listing?",
+      "choices": ["ls", "ls -a", "pwd", "cd .."],
+      "answer": 1,
+      "explain": "ls -a (or ls -la) includes hidden names."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "It is safer to inspect shell config with cat or less before editing it.",
+      "answer": true,
+      "explain": "Read first; a bad edit can break new interactive shells."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": ".gitignore is typically…",
+      "choices": [
+        "A visible README",
+        "A project dotfile telling Git what to ignore",
+        "A required PATH entry",
+        "A umask setting"
+      ],
+      "answer": 1,
+      "explain": ".gitignore is a hidden project file used by Git."
+    }
+  ]
+}

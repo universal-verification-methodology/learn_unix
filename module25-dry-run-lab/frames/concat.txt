@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-1.png'
+duration 17.784
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-2.png'
+duration 18.72
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-3.png'
+duration 21.168
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-4.png'
+duration 20.296
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-6.png'
+duration 14.976
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-7.png'
+duration 19.68
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/frames/slide-7.png'

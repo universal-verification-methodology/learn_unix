@@ -1,0 +1,31 @@
+# real shell session (Track A)
+
+$ head -5 sample.log
+[INFO] Module 3 pipes example — sample log for grep practice
+[INFO] Start simulation at 2024-02-03 10:00:00
+[INFO] Loading design from src/top.v
+[WARNING] Unused signal 'debug_q' in block top
+[INFO] Compilation complete
+
+$ grep ERROR sample.log
+[ERROR] Assertion failed at line 42: expected 0x0, got 0x1
+[ERROR] Mismatch in output file
+[ERROR] 2 tests failed, 1 passed
+
+$ grep -i warning sample.log
+[WARNING] Unused signal 'debug_q' in block top
+[WARNING] Timeout threshold approaching
+[WARNING] Clock period may be too short for timing
+
+$ grep -c ERROR sample.log
+3
+
+$ cat sample.log | grep INFO | head -5
+[INFO] Module 3 pipes example — sample log for grep practice
+[INFO] Start simulation at 2024-02-03 10:00:00
+[INFO] Loading design from src/top.v
+[INFO] Compilation complete
+[INFO] Running testbench
+
+$ grep -i error sample.log | wc -l
+3

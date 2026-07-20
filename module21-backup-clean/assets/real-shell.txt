@@ -1,0 +1,24 @@
+# real shell session (Track A)
+
+$ find sample_project/build sample_project/logs -type f
+sample_project/build/output.o
+sample_project/build/output.tmp
+sample_project/build/wave.vcd
+sample_project/logs/run.log
+
+$ tar czf /tmp/m21_backup_demo.tar.gz --exclude=build --exclude=logs -C sample_project .
+
+$ tar tzf /tmp/m21_backup_demo.tar.gz
+./
+./src/
+./src/main.v
+./tb/
+./tb/test_main.v
+
+$ find sample_project/build sample_project/logs -type f
+sample_project/build/output.o
+sample_project/build/output.tmp
+sample_project/build/wave.vcd
+sample_project/logs/run.log
+
+# (still present — clean only after you mean to)

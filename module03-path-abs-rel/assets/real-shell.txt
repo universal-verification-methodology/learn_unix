@@ -1,0 +1,25 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/examples/paths
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu 1939 Jul 18 16:34 README.md
+
+$ cd ..
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/examples
+
+$ cd paths
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module03-path-abs-rel/examples/paths
+
+$ cd ~
+
+$ pwd
+/home/yongfu

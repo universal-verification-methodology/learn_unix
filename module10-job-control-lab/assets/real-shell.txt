@@ -1,0 +1,20 @@
+# real shell session (Track A)
+
+$ set -m
+
+$ chmod u+x slow_output.sh
+
+$ ./slow_output.sh > bg.log 2>&1 &
+
+$ jobs
+[1]+  Running                 ./slow_output.sh > bg.log 2>&1 &
+
+$ sleep 2
+
+$ tail -5 bg.log
+[03:12:42] Line 1
+[03:12:43] Line 2
+
+$ kill $(jobs -p); wait 2>/dev/null || true
+
+$ jobs

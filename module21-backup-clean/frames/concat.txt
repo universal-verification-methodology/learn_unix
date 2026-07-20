@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-1.png'
+duration 20.04
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-2.png'
+duration 23.136
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-3.png'
+duration 20.328
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-4.png'
+duration 20.656
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-6.png'
+duration 16.008
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-7.png'
+duration 19.728
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module21-backup-clean/frames/slide-7.png'

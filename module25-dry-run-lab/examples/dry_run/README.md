@@ -14,7 +14,7 @@ dry_run/
 ## Try these (from repo root)
 
 ```bash
-cd module8/examples/dry_run
+cd module25-dry-run-lab/examples/dry_run
 chmod u+x remove_old.sh
 ./remove_old.sh --help
 ./remove_old.sh --dry-run

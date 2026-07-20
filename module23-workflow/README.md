@@ -27,13 +27,15 @@ Work in your local terminal using this module’s `examples/` (copied from the p
 
 > Concept labs are literacy tools — they do not replace a real shell for scripts you will keep in a design project.
 
-## Media (planned)
+## Media
 
 | Artifact | Path |
 |----------|------|
+| Transcript | [transcript.md](transcript.md) |
 | Outline | [outline.yaml](outline.yaml) |
-| Transcript stub | [transcript.md](transcript.md) |
-| Slides / video | `media/module23/` (generate later) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
 
 ## Files
 
@@ -43,6 +45,7 @@ module23-workflow/
 ├── CHECKLIST.md    # Track A + Track B checkboxes
 ├── EXAMPLES.md     # real-Unix example index
 ├── outline.yaml    # slide / clip outline
-├── transcript.md   # speakable stub
+├── transcript.md   # speakable narration
+├── quiz.json       # formative check
 └── examples/       # hands-on trees (Track A)
 ```

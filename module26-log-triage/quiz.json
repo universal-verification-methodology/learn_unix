@@ -1,0 +1,53 @@
+{
+  "module": "module26-log-triage",
+  "title": "Log / failure triage check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A useful first look at a failed run log is…",
+      "choices": [
+        "Delete the log and recompile blindly",
+        "tail the end (and grep for error/warn)",
+        "Format the disk",
+        "Disable Make"
+      ],
+      "answer": 1,
+      "explain": "The end of the log usually shows the stopping failure; grep finds the cues."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "\"iverilog: command not found\" is best classified as…",
+      "choices": [
+        "A DUT assertion mismatch",
+        "An environment / PATH problem",
+        "A flake that needs more seeds",
+        "A successful pass"
+      ],
+      "answer": 1,
+      "explain": "Missing tools are env failures—fix PATH/install, not RTL first."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "An expect/got mismatch in the testbench is usually a real fail, not a missing license.",
+      "answer": true,
+      "explain": "Scoreboard mismatches point at design/test until proven otherwise."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "grep -i error sample.log is useful because…",
+      "choices": [
+        "It deletes error lines",
+        "It finds ERROR/Error/error without caring about case",
+        "It only works on binary files",
+        "It disables Make recipes"
+      ],
+      "answer": 1,
+      "explain": "-i makes the search case-insensitive so you catch mixed-case tags."
+    }
+  ]
+}

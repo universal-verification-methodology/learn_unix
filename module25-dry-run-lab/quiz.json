@@ -1,0 +1,53 @@
+{
+  "module": "module25-dry-run-lab",
+  "title": "Dry-run mindset check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "The dry-run habit order is…",
+      "choices": [
+        "Live delete, then preview",
+        "Preview → read the list → live only if OK",
+        "Skip preview if CI is green",
+        "Echo after rm succeeds"
+      ],
+      "answer": 1,
+      "explain": "Preview first, verify targets, then run live."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "make -n clean typically…",
+      "choices": [
+        "Deletes build/ immediately",
+        "Prints what Make would run without executing recipes",
+        "Formats the disk",
+        "Disables .PHONY"
+      ],
+      "answer": 1,
+      "explain": "Make’s -n is a dry-run: show recipes, do not run them."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "A script’s --dry-run should print would-do lines instead of deleting.",
+      "answer": true,
+      "explain": "Dry-run previews side effects; live run performs them."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Echo-first means…",
+      "choices": [
+        "Print the destructive command before running the real one",
+        "Always pipe to /dev/null",
+        "Skip reading the preview list",
+        "Use sudo by default"
+      ],
+      "answer": 0,
+      "explain": "echo rm … (or similar) lets you verify the command before pasting it live."
+    }
+  ]
+}

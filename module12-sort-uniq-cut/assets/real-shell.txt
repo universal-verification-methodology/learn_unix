@@ -1,0 +1,47 @@
+# real shell session (Track A)
+
+$ cat names.txt
+alice
+bob
+alice
+charlie
+bob
+alice
+diana
+
+$ sort names.txt
+alice
+alice
+alice
+bob
+bob
+charlie
+diana
+
+$ sort names.txt | uniq
+alice
+bob
+charlie
+diana
+
+$ sort names.txt | uniq -c
+      3 alice
+      2 bob
+      1 charlie
+      1 diana
+
+$ sort numbers.txt
+1
+10
+100
+2
+20
+5
+
+$ sort -n numbers.txt
+1
+2
+5
+10
+20
+100

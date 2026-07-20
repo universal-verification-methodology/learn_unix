@@ -1,0 +1,53 @@
+{
+  "module": "module06-realpath-resolve",
+  "title": "realpath check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "readlink on a symlink (without -f) prints…",
+      "choices": [
+        "Always the canonical absolute path",
+        "The stored target string (often relative)",
+        "Only the inode number",
+        "Nothing useful"
+      ],
+      "answer": 1,
+      "explain": "Plain readlink shows the stored target, not a full resolve."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "realpath on a path typically…",
+      "choices": [
+        "Leaves .. and symlinks untouched",
+        "Returns a cleaned absolute path and follows symlinks",
+        "Deletes the file",
+        "Only works inside Git"
+      ],
+      "answer": 1,
+      "explain": "realpath canonicalizes: absolute, no . / .., symlinks followed."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "realpath usually fails on a broken symlink because the final target does not exist.",
+      "answer": true,
+      "explain": "Strict realpath needs a resolvable final path; readlink can still print the stored string."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A common script use of realpath is…",
+      "choices": [
+        "Formatting disks",
+        "Getting the absolute directory of a script or file",
+        "Replacing ls",
+        "Editing PATH permanently"
+      ],
+      "answer": 1,
+      "explain": "Scripts often resolve their own directory to absolute form."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "module": "module15-alias-lab",
+  "title": "Alias & functions check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "alias ll='ls -alF' defines…",
+      "choices": [
+        "A new user account named ll",
+        "A short name that expands to a long listing command",
+        "A permanent system-wide PATH change",
+        "A git remote"
+      ],
+      "answer": 1,
+      "explain": "An alias is a text shortcut for a command string in the current shell."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "When you need arguments like $1 or \"$@\", prefer…",
+      "choices": [
+        "Only an alias",
+        "A shell function (or a script)",
+        "unalias with no name",
+        "history -c"
+      ],
+      "answer": 1,
+      "explain": "Functions (and scripts) take arguments cleanly; aliases are poor at that."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "unalias ll removes the ll alias from the current session.",
+      "answer": true,
+      "explain": "unalias drops a session alias; startup-file aliases return in a new shell."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "type greet after defining greet() { … } typically shows it is a…",
+      "choices": [
+        "directory",
+        "function",
+        "broken symlink",
+        "kernel module"
+      ],
+      "answer": 1,
+      "explain": "type reports whether a name is an alias, function, or external command."
+    }
+  ]
+}

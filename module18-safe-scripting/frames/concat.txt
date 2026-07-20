@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-1.png'
+duration 19.656
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-2.png'
+duration 27.288
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-3.png'
+duration 21.432
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-4.png'
+duration 24.328
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-6.png'
+duration 16.848
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-7.png'
+duration 21.216
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module18-safe-scripting/frames/slide-7.png'

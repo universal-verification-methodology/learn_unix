@@ -1,0 +1,40 @@
+# real shell session (Track A)
+
+$ pwd
+/mnt/d/proj/designs/learning/courses/learn_unix/module25-dry-run-lab/examples/dry_run
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 18 16:34 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu 1508 Jul 20 09:15 README.md
+-rwxrwxrwx 1 yongfu yongfu  124 Jul 20 09:15 commands_to_try.txt
+-rwxrwxrwx 1 yongfu yongfu  688 Jul 18 16:34 remove_old.sh
+
+$ chmod u+x remove_old.sh
+
+$ ./remove_old.sh --help
+Usage: ./remove_old.sh [--dry-run]
+
+$ ./remove_old.sh --dry-run
+[dry-run] Would remove 0 file(s). Run without --dry-run to remove.
+
+$ touch -d 2020-01-01 old_file.txt
+
+$ ls -la old_file.txt
+-rwxrwxrwx 1 yongfu yongfu 0 Jan  1  2020 old_file.txt
+
+$ ./remove_old.sh --dry-run
+Would remove: ./old_file.txt
+[dry-run] Would remove 1 file(s). Run without --dry-run to remove.
+
+$ ./remove_old.sh
+Removed 1 file(s).
+
+$ ls -la
+total 4
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 09:15 .
+drwxrwxrwx 1 yongfu yongfu 4096 Jul 20 00:49 ..
+-rwxrwxrwx 1 yongfu yongfu 1508 Jul 20 09:15 README.md
+-rwxrwxrwx 1 yongfu yongfu  124 Jul 20 09:15 commands_to_try.txt
+-rwxrwxrwx 1 yongfu yongfu  688 Jul 18 16:34 remove_old.sh

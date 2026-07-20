@@ -1,0 +1,53 @@
+{
+  "module": "module12-sort-uniq-cut",
+  "title": "sort/uniq/cut check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "uniq removes duplicates that are…",
+      "choices": [
+        "Anywhere in the file automatically",
+        "Adjacent (next to each other)",
+        "Only on even lines",
+        "Only numeric lines"
+      ],
+      "answer": 1,
+      "explain": "uniq collapses adjacent duplicates — sort first for full dedupe."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "sort -n is for…",
+      "choices": [
+        "Case-insensitive text only",
+        "Numeric ordering of lines",
+        "Network sort",
+        "Reversing bytes"
+      ],
+      "answer": 1,
+      "explain": "Numeric sort orders 1, 2, 10 correctly."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "sort file | uniq -c prints each unique line with a count of how often it appeared.",
+      "answer": true,
+      "explain": "uniq -c prefixes counts after duplicates are adjacent via sort."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "cut -d',' -f1,3 file typically…",
+      "choices": [
+        "Deletes columns 1 and 3",
+        "Prints fields 1 and 3 using comma as delimiter",
+        "Sorts by field 1",
+        "Counts unique fields"
+      ],
+      "answer": 1,
+      "explain": "-d sets the delimiter; -f selects fields."
+    }
+  ]
+}

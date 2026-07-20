@@ -1,0 +1,53 @@
+{
+  "module": "module07-permissions",
+  "title": "Permissions check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "chmod u+x script.sh does what?",
+      "choices": [
+        "Deletes the script",
+        "Adds execute permission for the owner",
+        "Adds the script to PATH",
+        "Changes ownership to root"
+      ],
+      "answer": 1,
+      "explain": "u+x adds the execute bit for the user (owner)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why do we often run ./hello.sh instead of hello.sh?",
+      "choices": [
+        "Dot-slash is required by chmod",
+        "The current directory is usually not on PATH",
+        "Only root can run bare names",
+        "Symlinks cannot be executed"
+      ],
+      "answer": 1,
+      "explain": "Without ./ the shell searches PATH; . is usually omitted for safety."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "umask sets default permission bits that are masked off when creating new files and directories.",
+      "answer": true,
+      "explain": "Bits set in umask are cleared from the creation mode."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Mode 600 typically means…",
+      "choices": [
+        "Everyone can read and write",
+        "Owner read/write; group and others none",
+        "Execute only for others",
+        "Directory sticky bit"
+      ],
+      "answer": 1,
+      "explain": "600 is rw------- — private to the owner."
+    }
+  ]
+}

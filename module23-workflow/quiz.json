@@ -1,0 +1,53 @@
+{
+  "module": "module23-workflow",
+  "title": "Workflow checklist check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Before git push, a useful first check is…",
+      "choices": [
+        "Delete .git",
+        "git status (and commit/stash if dirty)",
+        "Format the disk",
+        "Disable Make"
+      ],
+      "answer": 1,
+      "explain": "A clean (or intentional) tree avoids pushing half-finished work by accident."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "If make test fails with TOOLS not set, you should first…",
+      "choices": [
+        "Rewrite all RTL",
+        "Fix or source the environment / .env (TOOLS path)",
+        "rm -rf src",
+        "Ignore exit codes forever"
+      ],
+      "answer": 1,
+      "explain": "Env and Make must agree; missing TOOLS is an env checklist item."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "check_ready.sh exiting non-zero when git status is dirty is intentional.",
+      "answer": true,
+      "explain": "Non-zero exit blocks a careless push until you commit or stash."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Prefer dry-run before a destructive clean because…",
+      "choices": [
+        "It compresses better",
+        "You can see what would be removed before deleting",
+        "Git requires it",
+        "It disables PATH"
+      ],
+      "answer": 1,
+      "explain": "Dry-run (or make -n) reduces accidental deletes."
+    }
+  ]
+}

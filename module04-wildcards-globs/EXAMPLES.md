@@ -6,9 +6,21 @@ Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
 See [`examples/wildcards/README.md`](examples/wildcards/README.md) if present.
 
-**Try:**
+**Try these** (from `examples/wildcards`):
 
 ```bash
-cd module04-wildcards-globs/examples/wildcards
-ls -la
+# ls — see every name first
+ls
+
+# ls *.txt — all .txt files
+ls *.txt
+
+# ls report_*.txt — reports by prefix
+ls report_*.txt
+
+# ls data_?.log — exactly one character in the middle
+ls data_?.log
+
+# ls [abc].txt — one character from the set
+ls [abc].txt
 ```

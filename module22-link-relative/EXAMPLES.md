@@ -4,11 +4,24 @@ Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
 ## `link_relative/`
 
-See [`examples/link_relative/README.md`](examples/link_relative/README.md) if present.
+See [`examples/link_relative/README.md`](examples/link_relative/README.md).
 
-**Try:**
+**Try these:**
 
 ```bash
-cd module22-link-relative/examples/link_relative
-ls -la
+cd module22-link-relative/examples/link_relative/project
+
+# Inspect the existing relative link (or recreate it)
+ls -la external/
+readlink external/lib.v
+cat external/lib.v
+
+# Recreate if missing:
+# ln -sfn ../../shared/lib.v external/lib.v
+
+# Absolute contrast (optional — remove afterward)
+ln -s "$(realpath ../shared/lib.v)" external/abs_lib.v
+ls -la external/
+readlink external/abs_lib.v
+rm external/abs_lib.v
 ```

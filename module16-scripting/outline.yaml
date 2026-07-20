@@ -1,12 +1,82 @@
-# Module 16 outline
-title: "Script control flow"
-kind: lab
-lab: scripting
+title: Script control flow
+footer: learn_unix — scripting
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Script control flow
+  subtitle: A one-liner is fine until you need decisions and repetition
+  notes: A one-liner is fine until you need decisions and repetition. Scripts add
+    a shebang, arguments, if tests, for loops, and case branches so you can automate
+    greets, file sweeps, and tool dispatch. This module is the control-flow core of
+    shell scripting—before you lean on exit status tricks in the next module.
+- type: bullets
+  title: If, for, and case
+  bullets:
+  - An if test with brackets checks a condition, file exists, string empty
+  - A for loop walks a list, often a glob of files, and runs the body once per item
+  - A case statement matches one value against patterns and is cleaner than a long
+    if-elif
+  - Quote variables, end case arms with double semicolon
+  notes: An if test with brackets checks a condition—file exists, string empty, and
+    so on—then runs a then or else branch. A for loop walks a list, often a glob of
+    files, and runs the body once per item. A case statement matches one value against
+    patterns and is cleaner than a long if-elif chain for menus or file types. Quote
+    variables, end case arms with double semicolon, and prefer a readable script file
+    over a fragile pasted blob.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Scripting lab
+  notes: In the browser lab, load the starter example—safe-args with a name argument
+    printing a hello line. Edit the script pane, set args or stdin when needed, and
+    run. Try an if on a missing argument, a for loop, and a case on a mode string.
+    Orient yourself with the editor, the run controls, and the challenge list, then
+    practice on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — control flow script
+  notes: In the real Unix track, open this module’s control-flow example. Make the
+    line-count script executable, then run it so the for loop walks each log file
+    and the if check skips non-files. Compare with word-count on the log glob. Also
+    explore script basics, arguments with a default name, and the case-statement greet
+    when you want more practice. You will reuse for-over-files whenever a sim or log
+    folder grows.
+- type: code
+  title: Real shell practice — try these
+  code: '# chmod u+x count_lines.sh — make the control-flow script executable
+
+    chmod u+x count_lines.sh
+
+
+    # ./count_lines.sh — for each *.log: if it is a file, print line count
+
+    ./count_lines.sh
+
+
+    # wc -l *.log — compare: word-count lines on the same logs
+
+    wc -l *.log
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Spaces matter inside test brackets, write `[ -f "$file" ]`, not jammed tokens
+  - Always quote `"$file"` and `"$1"` so names with spaces survive
+  - And remember
+  notes: 'Spaces matter inside test brackets—write `[ -f "$file" ]`, not jammed tokens.
+    Always quote `"$file"` and `"$1"` so names with spaces survive. And remember:
+    the browser lab shows the idea; real automation still lives in scripts you chmod
+    and run on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell, run the control-flow script and try arguments or case greet
+    next
+  - When you are ready
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, run the control-flow
+    script and try arguments or case greet next. When you are ready, take the short
+    quiz, then continue to exit status and conditional chaining.

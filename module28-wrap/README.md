@@ -25,3 +25,13 @@ Legacy combined path still lives in [`../learn_unix_git/`](../learn_unix_git/).
 - [ ] I completed Track A and/or Track B for the lab modules I care about
 - [ ] I can explain abs vs rel paths and why globs expand before the command runs
 - [ ] I have a `~/unix_practice` (or similar) tree I can reuse in Git
+
+## Media
+
+| Artifact | Path |
+|----------|------|
+| Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |

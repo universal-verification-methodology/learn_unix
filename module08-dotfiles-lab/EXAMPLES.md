@@ -6,9 +6,24 @@ Track A (real Unix). Each folder was adapted from `learn_unix_git`.
 
 See [`examples/dotfiles/README.md`](examples/dotfiles/README.md) if present.
 
-**Try:**
+**Try these** (from `examples/dotfiles`):
 
 ```bash
-cd module08-dotfiles-lab/examples/dotfiles
+# ls — plain list; dot-names stay hidden
+ls
+
+# ls -a — show all names, including those starting with a dot
+ls -a
+
+# ls -la — long listing that includes hidden names
 ls -la
+
+# cat .hidden_file — read a hidden file (safe inspect)
+cat .hidden_file
+
+# cat .sample_rc — read an example config-style dotfile
+cat .sample_rc
+
+# ls -a ~ | head -12 — peek at real home dotfiles (read-only)
+ls -a ~ | head -12
 ```

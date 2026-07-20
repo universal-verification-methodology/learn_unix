@@ -1,12 +1,99 @@
-# Module 03 outline
-title: "Absolute vs relative paths"
-kind: lab
-lab: path-abs-rel
+title: Absolute vs relative paths
+footer: learn_unix — path abs rel
 slides:
-  - Course context / why this matters for digital design
-  - Core idea (1 concept)
-  - Track B: show lab starter (if lab module)
-  - Track A: one real-shell demo
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Absolute vs relative paths
+  subtitle: Paths are how you tell the shell where to go
+  notes: Paths are how you tell the shell where to go. In design work you jump between
+    source, testbench, and build folders constantly—and a relative path that worked
+    a moment ago can break after you change directories. This module makes absolute
+    and relative paths feel obvious.
+- type: bullets
+  title: Absolute vs relative
+  bullets:
+  - An absolute path starts from the filesystem root
+  - A relative path is resolved against your current working directory
+  notes: 'An absolute path starts from the filesystem root—usually with a leading
+    slash—or from home with a tilde. A relative path is resolved against your current
+    working directory: a plain folder name, a single dot for “here,” or two dots for
+    “up one level.” After you change directory, every relative path is re-aimed at
+    the new place.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Absolute vs relative paths lab
+  notes: In the browser lab, load the starter example. Watch the current directory,
+    resolve a relative path like going up and into another project folder, then try
+    an absolute or home-based path. Change directory and resolve again—you will see
+    when a relative path breaks. Orient yourself, try a few challenges, then practice
+    on a real shell.
+- type: image
+  title: Real shell practice
+  image: assets/real-shell.png
+  caption: Real shell — absolute and relative paths
+  notes: 'In the real Unix track, open this module’s paths example folder. Print the
+    working directory so you see the absolute path of where you are. List what is
+    here. Change up one level with two dots—that is a relative move—then print the
+    directory again. Change back into paths with a relative name. Finally, jump home
+    with a tilde and print once more: tilde expands to your home directory, which
+    is absolute in effect. You will reuse this when scripts and simulators expect
+    the right path.'
+- type: code
+  title: Real shell practice — try these
+  code: '# pwd — print working directory (absolute path of “here”)
+
+    pwd
+
+
+    # ls -la — list this folder so you see what relative names refer to
+
+    ls -la
+
+
+    # cd .. — relative: move up one directory
+
+    cd ..
+
+
+    # pwd — confirm where you landed after the relative move
+
+    pwd
+
+
+    # cd paths — relative: enter this folder by name from here
+
+    cd paths
+
+
+    # cd ~ — go to your home directory (tilde expands to home)
+
+    cd ~
+
+
+    # pwd — home’s absolute path
+
+    pwd
+
+    '
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - A relative path is not “wrong”, it is just tied to where you are now
+  - After change-directory, the same short path may fail
+  - Leading slash means from the root; tilde means home
+  - And remember
+  notes: 'A relative path is not “wrong”—it is just tied to where you are now. After
+    change-directory, the same short path may fail. Leading slash means from the root;
+    tilde means home. And remember: the browser lab shows the idea; real projects
+    and tools like Icarus and Verilator still need correct paths on a real shell.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, finish a few challenges after the starter
+  - On the real shell
+  - When you are ready, take the short quiz, then continue to globs and wildcards
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    finish a few challenges after the starter. On the real shell, practice relative
+    moves with two dots and absolute jumps with slash or tilde. When you are ready,
+    take the short quiz, then continue to globs and wildcards.

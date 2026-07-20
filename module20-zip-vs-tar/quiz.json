@@ -1,0 +1,48 @@
+{
+  "module": "module20-zip-vs-tar",
+  "title": "tar vs zip check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In tar czf archive.tar.gz dir/, the z flag means…",
+      "choices": ["Extract", "Gzip compression", "List only", "Zip format"],
+      "answer": 1,
+      "explain": "z enables gzip; c=create, f=file (archive name)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "tar tzf archive.tar.gz…",
+      "choices": [
+        "Deletes the archive",
+        "Lists contents without extracting",
+        "Converts to zip",
+        "Requires root"
+      ],
+      "answer": 1,
+      "explain": "t = list (table of contents)."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "zip -r packs a directory tree recursively; unzip -l lists a zip without extracting.",
+      "answer": true,
+      "explain": "-r is recursive create; -l lists."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Prefer zip over tar.gz when…",
+      "choices": [
+        "You only use Linux and never share",
+        "Sharing with Windows users who expect a .zip",
+        "You need to disable compression always",
+        "You want to edit binary ELF files in place"
+      ],
+      "answer": 1,
+      "explain": "zip is the common cross-platform handoff format."
+    }
+  ]
+}

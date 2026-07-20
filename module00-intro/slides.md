@@ -28,15 +28,16 @@ If you work in digital design or verification, you will live in a shell
 
 ## Set up the real Unix track
 - Open a terminal
-- On Windows, prefer WSL
+- On Windows, prefer WSL, Windows Subsystem for Linux, so you get a real Unix shell
 - From the learn Unix course folder, run the scaffold script once
-- It creates a small practice tree under your home directory where checklist exercises can
+- It does not install course tools
 - You will come back to that tree throughout the course
 
 ---
 
 ## Set up the browser lab track
 - From the monorepo
+- Serving the folder means your browser can load the interactive labs as ordinary web pages
 - If you prefer, use the published tools site instead
 - Either way, you only need to confirm you can reach the labs, the next module will send you
 

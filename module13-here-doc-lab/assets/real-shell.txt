@@ -1,0 +1,26 @@
+# real shell session (Track A)
+
+$ chmod u+x read_stdin.sh
+
+$ cat <<EOF
+line one
+line two
+EOF
+line one
+line two
+
+$ grep two <<EOF
+one
+two
+three
+EOF
+two
+
+$ ./read_stdin.sh <<EOF
+fed via here-doc
+EOF
+Reading from stdin (use <<EOF ... EOF to feed input):
+  Got: fed via here-doc
+
+$ grep hi <<< "hi from here-string"
+hi from here-string

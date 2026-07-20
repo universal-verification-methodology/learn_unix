@@ -1,0 +1,48 @@
+{
+  "module": "module19-project-archives",
+  "title": "Project layout & text tools check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In a typical RTL layout, generated objects and logs belong in…",
+      "choices": ["src/", "tb/", "build/ (or similar)", "docs/ only"],
+      "answer": 2,
+      "explain": "Keep generated artifacts in build/out and often exclude them from archives."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "grep -Rn PATTERN . means…",
+      "choices": [
+        "Find filenames only",
+        "Recursive content search with line numbers",
+        "Delete matching lines",
+        "Create a tar archive"
+      ],
+      "answer": 1,
+      "explain": "-R is recursive; -n prints line numbers."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "sed 's/old/new/g' file prints a substituted stream by default and does not edit the file unless you use in-place flags.",
+      "answer": true,
+      "explain": "Test on stdout first; use -i only when ready."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "diff -u is useful because…",
+      "choices": [
+        "It deletes both files",
+        "It produces unified diffs suitable for patches / similar to git diff",
+        "It only works on binary files",
+        "It replaces find"
+      ],
+      "answer": 1,
+      "explain": "Unified diff is the usual format for review and patch."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-1.png'
+duration 19.536
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-2.png'
+duration 22.104
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-3.png'
+duration 18.552
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-4.png'
+duration 17.752
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-6.png'
+duration 16.536
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-7.png'
+duration 18.936
+file '/mnt/d/proj/designs/learning/courses/learn_unix/module23-workflow/frames/slide-7.png'

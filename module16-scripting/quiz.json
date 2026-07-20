@@ -1,0 +1,53 @@
+{
+  "module": "module16-scripting",
+  "title": "Script control flow check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "for file in *.log; do … done typically…",
+      "choices": [
+        "Deletes every log file",
+        "Runs the loop body once per matching file",
+        "Compiles Verilog",
+        "Disables the shebang"
+      ],
+      "answer": 1,
+      "explain": "A for loop iterates over the expanded list (here, *.log files)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "if [ -f \"$file\" ]; then … checks whether…",
+      "choices": [
+        "The string is empty",
+        "The path exists and is a regular file",
+        "The user is root",
+        "Git is installed"
+      ],
+      "answer": 1,
+      "explain": "-f is the test for an existing regular file."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "case … esac is often clearer than a long if/elif chain when matching one variable against several patterns.",
+      "answer": true,
+      "explain": "case is the usual multi-way branch for one value."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "NAME=\"${1:-World}\" means…",
+      "choices": [
+        "Always use World and ignore $1",
+        "Use $1 if set, otherwise World",
+        "Delete argument 1",
+        "Require exactly two arguments"
+      ],
+      "answer": 1,
+      "explain": "The :- form supplies a default when the parameter is unset or empty."
+    }
+  ]
+}
