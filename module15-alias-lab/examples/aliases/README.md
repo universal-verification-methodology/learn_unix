@@ -17,7 +17,7 @@ aliases/
 ```bash
 alias ll='ls -alF'
 ll
-alias cproj='cd ~/proj/learn_unix / learn_git (see LEGACY.md)'
+alias cproj='cd ~/proj/learn_unix'
 cproj
 pwd
 ```
@@ -43,7 +43,7 @@ Add lines to `~/.bashrc` or `~/.zshrc`:
 
 ```bash
 alias ll='ls -alF'
-alias cproj='cd ~/proj/learn_unix / learn_git (see LEGACY.md)'
+alias cproj='cd ~/proj/learn_unix'
 ```
 
 Then run `source ~/.bashrc` (or `source ~/.zshrc`) or open a new terminal. **Do not edit** config files until you are comfortable; try temporary aliases first.

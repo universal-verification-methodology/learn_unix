@@ -1,6 +1,6 @@
 # Module 24 examples — Makefile basics
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `makefile_basics/`
 

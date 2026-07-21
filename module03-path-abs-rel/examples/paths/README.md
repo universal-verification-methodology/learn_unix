@@ -50,7 +50,7 @@ pwd
 From anywhere, you can jump to this folder if you know the full path. Replace `$USER` with your username if needed:
 
 ```bash
-cd /home/$USER/proj/learn_unix / learn_git (see LEGACY.md)/module1/examples/paths
+cd /home/$USER/proj/learn_unix/module1/examples/paths
 pwd
 ```
 
@@ -66,7 +66,7 @@ Go to your **home directory**:
 ```bash
 cd ~
 pwd
-cd ~/proj/learn_unix / learn_git (see LEGACY.md)/module1/examples/paths
+cd ~/proj/learn_unix/module1/examples/paths
 pwd
 ```
 

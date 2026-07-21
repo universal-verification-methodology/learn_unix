@@ -1,6 +1,6 @@
 # Module 22 examples — Relative symlink pitfalls
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `link_relative/`
 

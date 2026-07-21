@@ -170,4 +170,4 @@ By workflow (Track B): [vfs-terminal](https://universal-verification-methodology
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE).
 
-Example trees for early modules were adapted from [`learn_unix / learn_git (legacy archive ignored)`](https://github.com/universal-verification-methodology/learn_unix). Platform tools and the parent monorepo may carry additional notices.
+Example trees for early modules were ship with this course’s module `examples/`. Platform tools and the parent monorepo may carry additional notices.

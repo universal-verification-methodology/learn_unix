@@ -12,7 +12,7 @@ After this module you can explain and practice the ideas taught by **`exit-statu
 
 ### Track A — Real Unix (hands-on)
 
-Work in your local terminal using this module’s `examples/` (copied from the proven `learn_unix / learn_git (legacy archive ignored)` trees).
+Work in your local terminal using this module’s `examples/`.
 
 1. Open [EXAMPLES.md](EXAMPLES.md) and run the “Try these” commands.
 2. Complete [CHECKLIST.md](CHECKLIST.md) on a real filesystem (`~/unix_practice` recommended).

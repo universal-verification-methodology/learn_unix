@@ -1,6 +1,6 @@
 # Module 23 examples — Pre-push / Make / env checklist
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `pre_push_checks/`
 

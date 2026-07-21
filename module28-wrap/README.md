@@ -18,7 +18,7 @@ If you mainly used **real Unix**, skim any skipped browser labs for visual chall
 ## Next course
 
 → **learn_git** (syllabus: [../../syllabus.md](../../syllabus.md#2-learn_git))  
-Legacy combined path still lives in [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_unix** / **learn_git**).
+
 
 ## Checklist
 

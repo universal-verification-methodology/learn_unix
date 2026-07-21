@@ -1,6 +1,6 @@
 # Module 12 examples — sort / uniq / cut
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `sort_uniq/` (start here)
 

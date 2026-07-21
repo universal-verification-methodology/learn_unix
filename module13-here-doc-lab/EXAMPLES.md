@@ -1,6 +1,6 @@
 # Module 13 examples — Here-doc / here-string
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `here_doc/`
 

@@ -1,6 +1,6 @@
 # Module 14 examples — Shell history & reverse-search
 
-Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
+Track A (real Unix). Each folder ships under this module’s `examples/`.
 
 ## `history/`
 
