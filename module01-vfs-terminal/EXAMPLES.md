@@ -1,6 +1,6 @@
 # Module 01 examples — Virtual filesystem terminal
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `navigation/`
 

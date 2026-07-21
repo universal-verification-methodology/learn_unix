@@ -1,6 +1,6 @@
 # Module 09 examples — Process list & signals
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `processes/`
 

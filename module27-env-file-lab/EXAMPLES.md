@@ -1,6 +1,6 @@
 # Module 27 examples — .env literacy
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `env_file/`
 

@@ -25,7 +25,7 @@ ls -la external/
 readlink external/lib.v
 cat external/lib.v
 cd ..
-# Moving the whole learn_unix_git repo keeps the link valid
+# Moving the whole learn_unix / learn_git (see LEGACY.md) repo keeps the link valid
 # because we used a path relative to the link's location
 ```
 

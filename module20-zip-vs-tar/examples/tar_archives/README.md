@@ -28,7 +28,7 @@ tar tzf demo.tar.gz
 # Extract to current directory
 mkdir -p /tmp/tar_extract
 cd /tmp/tar_extract
-tar xzf /path/to/learn_unix_git/module5/examples/tar_archives/demo.tar.gz
+tar xzf /path/to/learn_unix / learn_git (see LEGACY.md)/module5/examples/tar_archives/demo.tar.gz
 ls -la demo_dir/
 ```
 

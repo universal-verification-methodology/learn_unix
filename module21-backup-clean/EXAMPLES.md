@@ -1,6 +1,6 @@
 # Module 21 examples — Backup & clean-build
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `backup/`
 

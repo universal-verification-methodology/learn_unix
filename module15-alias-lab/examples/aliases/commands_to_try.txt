@@ -3,7 +3,7 @@
 # Temporary aliases (current session only)
 alias ll='ls -alF'
 alias la='ls -A'
-alias cproj='cd ~/proj/learn_unix_git'
+alias cproj='cd ~/proj/learn_unix / learn_git (see LEGACY.md)'
 
 # Use them
 ll

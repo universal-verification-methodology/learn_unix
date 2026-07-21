@@ -1,6 +1,6 @@
 # Module 19 examples — Project layout, archives, sed & diff
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `project_structure/`
 

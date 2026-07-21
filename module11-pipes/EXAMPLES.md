@@ -1,6 +1,6 @@
 # Module 11 examples — Pipes, redirection, xargs
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `pipes/` (start here)
 

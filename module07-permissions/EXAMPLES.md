@@ -1,6 +1,6 @@
 # Module 07 examples — Permissions, umask, PATH
 
-Track A (real Unix). Each folder was adapted from `learn_unix_git`.
+Track A (real Unix). Each folder was adapted from `learn_unix / learn_git (legacy archive ignored)`.
 
 ## `permissions/` (start here)
 

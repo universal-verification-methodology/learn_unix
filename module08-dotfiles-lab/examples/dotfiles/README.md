@@ -71,6 +71,6 @@ Look for `.bashrc`, `.profile`, `.gitconfig`, etc. **Do not edit** system or she
 In design and dev work:
 
 - **Home** (`~`) — your personal files and dotfiles
-- **Project dirs** (e.g. `~/proj/learn_unix_git`) — repos often have `.git/`, `.gitignore`, sometimes `.config` or tool-specific dotfiles
+- **Project dirs** (e.g. `~/proj/learn_unix / learn_git (see LEGACY.md)`) — repos often have `.git/`, `.gitignore`, sometimes `.config` or tool-specific dotfiles
 
 Knowing that dotfiles exist and how to list them (`ls -a`) helps you navigate and configure your environment safely.

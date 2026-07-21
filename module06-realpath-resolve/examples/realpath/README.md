@@ -22,7 +22,7 @@ realpath link_to_file
 readlink -f .
 readlink -f link_to_file
 cd /tmp
-realpath /home/user/proj/learn_unix_git/module2/examples/realpath/../realpath
+realpath /home/user/proj/learn_unix / learn_git (see LEGACY.md)/module2/examples/realpath/../realpath
 ```
 
 ## 1. realpath

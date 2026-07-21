@@ -7,7 +7,7 @@ $ chmod u+x check_ready.sh
 
 $ ./check_ready.sh   # status + log; exit 1 if dirty
 === git status ===
- m courses/learn_unix_git
+ m courses/learn_unix / learn_git (see LEGACY.md)
  M platform/README.md
  M platform/assets/site.css
  M platform/index.html
@@ -158,7 +158,7 @@ You have uncommitted changes. Commit or stash before pushing.
 
 $ ./check_ready.sh
 === git status ===
- m courses/learn_unix_git
+ m courses/learn_unix / learn_git (see LEGACY.md)
  M platform/README.md
  M platform/assets/site.css
  M platform/index.html

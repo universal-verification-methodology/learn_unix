@@ -1,6 +1,6 @@
 # Module 8 scripts — commands to try
 
-# From learn_unix_git repo root:
+# From learn_unix / learn_git (see LEGACY.md) repo root:
 cd module8/examples/template/sample_project
 chmod +x scripts/run_demo.sh
 
